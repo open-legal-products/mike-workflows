@@ -1,0 +1,18 @@
+$schema: "../../workflow-schema/pack.schema.yaml"
+id: "eu-ai-governance"
+title: "EU AI Governance Pack"
+description: "Three workflows for organisations deploying or building AI under EU rules. The AI Act triage runs a system through eight ordered determinations under Regulation (EU) 2024/1689 - definition, prohibited practices, high-risk classification, general-purpose AI, transparency, operator role, obligation map with deadlines - and ends in a triage card for human decision. The NIS2 triage navigates scope and obligations under Directive (EU) 2022/2555, national-transposition question first: sectors, size-cap, essential versus important, the ten risk-management measures, the incident reporting clock, management-body duties, penalty ceilings. The privilege preflight checks a single piece of legal content before it is pasted into an external AI tool, scores five risk factors, and returns a banded SAFE / CAUTION / STOP verdict with a redacted draft where redaction can cure the risk. Every workflow ends in a draft for decision; registration, notification, and sending stay with a human."
+publisher:
+  name: "MateMatic Solutions"
+  url: "https://matematicsolutions.com"
+license: "MIT"
+version: "1.0.0"
+practice: "AI Governance"
+jurisdiction: "European Union"
+source:
+  repo: "https://github.com/matematicsolutions/awesome-matematic-skills-en"
+  url: "https://matematicsolutions.com"
+workflows:
+  - "eu-ai-act-triage"
+  - "nis2-compliance-triage"
+  - "privilege-preflight"
