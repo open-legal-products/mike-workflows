@@ -3,7 +3,7 @@ name: sg-online-safety-tabular-review
 description: Review Singapore online-safety designation, applicable codes and operational evidence to propose compliance priorities.
 license: MIT
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   author: Si Han Xu
   language: English
   mike-display-name: SG Online Safety Tabular Review

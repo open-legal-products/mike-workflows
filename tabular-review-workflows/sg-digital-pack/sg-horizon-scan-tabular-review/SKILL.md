@@ -3,7 +3,7 @@ name: sg-horizon-scan-tabular-review
 description: Map Singapore regulatory instruments, legal force, commencement and obligations to supplied product and compliance evidence.
 license: MIT
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   author: Si Han Xu
   language: English
   mike-display-name: SG Horizon Scan Tabular Review

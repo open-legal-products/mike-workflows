@@ -3,7 +3,7 @@ name: sg-dpia-cross-border-tabular-review
 description: Review Singapore data-protection impact assessments and cross-border transfers against the PDPA and identified PDPC guidance.
 license: MIT
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   author: Si Han Xu
   language: English
   mike-display-name: SG DPIA Cross Border Tabular Review

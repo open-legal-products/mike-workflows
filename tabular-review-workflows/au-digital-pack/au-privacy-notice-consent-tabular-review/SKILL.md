@@ -3,7 +3,7 @@ name: au-privacy-notice-consent-tabular-review
 description: Review Australian privacy-policy clauses, collection notices and supplied consent flows under the Privacy Act 1988 (Cth), APPs and OAIC guidance.
 license: MIT
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   author: Si Han Xu
   language: English
   mike-display-name: AU Privacy Notice Consent Tabular Review

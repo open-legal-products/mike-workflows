@@ -3,7 +3,7 @@ name: sg-consultation-response-tabular-review
 description: Review Singapore consultation papers and prepare evidence-grounded draft responses, consistency checks and submission plans for human approval.
 license: MIT
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   author: Si Han Xu
   language: English
   mike-display-name: SG Consultation Response Tabular Review

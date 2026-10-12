@@ -3,7 +3,7 @@ name: au-horizon-scan-tabular-review
 description: Scan Australian digital, content, data and AI regulation and map sourced obligations to supplied product evidence.
 license: MIT
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   author: Si Han Xu
   language: English
   mike-display-name: AU Horizon Scan Tabular Review
