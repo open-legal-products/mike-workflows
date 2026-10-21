@@ -3,7 +3,7 @@ name: "privilege-preflight"
 description: "Pre-flight check for legal content BEFORE it is sent to an external, cloud-based AI tool (a browser chatbot, an office-suite assistant, any API outside the firm's control). Inventories what actually sits in the prompt, scores five risk factors - client identifiability, facts under professional secrecy, litigation strategy and work-product, third-party personal data, the AI provider's terms - and returns a banded verdict SAFE / CAUTION / STOP with a factor table and a disclosure-impact assessment. For CAUTION it prepares a redacted draft of the prompt for human approval; for STOP it always shows a way forward instead of a bare prohibition. Sends nothing and never performs the final redaction. Use before pasting client-matter content into an external chatbot, for a firm-wide prompt audit, or as the skeleton of an internal AI usage policy."
 license: "MIT"
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   author: "Wieslaw Mazur / MateMatic Solutions"
   language: "English"
   mike-display-name: "Privilege Preflight"
@@ -40,7 +40,7 @@ Quote an article number only when it is certain. Otherwise describe the duty in 
 
 - Legal professional privilege, EU law - settled CJEU case law: AM&S v Commission (Case 155/79) recognised LPP for communications with independent external lawyers in EU competition investigations; Akzo Nobel v Commission (Case C-550/07 P) confirmed that in-house counsel communications are NOT covered by LPP in EU Commission competition proceedings. Practical consequence: in-house teams pasting internal legal analysis into a cloud tool cannot assume even the baseline EU-level protection external counsel would have.
 - National professional secrecy regimes - in most continental systems secrecy is the lawyer's own enforceable duty, broader in scope than a common-law evidentiary privilege and typically unlimited in time. The exact statutory basis differs per jurisdiction - identify the user's regime and mark specifics [TO VERIFY] per country.
-- GDPR - personal data of the client and of third parties inside a prompt is processing: the definition of personal data (Article 4(1)), the AI provider as a processor requiring a data processing agreement (Article 28), transfers outside the EEA (Chapter V).
+- GDPR - personal data of the client and of third parties inside a prompt is processing: the definition of personal data (Article 4(1)); the AI provider's role, which must be classified, not assumed - processor (processes on the firm's behalf, Article 4(8)), independent controller (determines purposes and means itself, Article 4(7)), or joint controller (Article 26). An Article 28 data processing agreement covers only processing done on the firm's behalf; processing for the provider's own purposes, such as model training or product improvement, falls outside it and needs the provider's controller terms and its own lawful basis assessed; transfers outside the EEA (Chapter V).
 - Trade Secrets Directive (EU) 2016/943 - protection depends on "reasonable steps" to keep the information secret; pasting a client's trade secret into a public chatbot is an argument AGAINST reasonable steps and can weaken the client's own protection, independently of any privilege question.
 - Disciplinary and liability exposure - breach of professional secrecy is a disciplinary offence under bar rules and may found civil liability towards the client; the concrete provision depends on the bar involved [TO VERIFY].
 - Comparative footnote only: US attorney-client privilege and work-product doctrine raise a parallel waiver debate, but this workflow does not use them as its framework.
@@ -57,7 +57,7 @@ Score each factor separately: CLEAN / CAUTION / CRITICAL.
 
 **(d) Third-party personal data.** Witnesses, the opposing party, family members, the client's employees. They chose no law firm and accepted no terms - the lawful basis for processing their data in a cloud AI tool is usually the weakest link.
 
-**(e) Where the prompt goes.** The AI provider's terms: is prompt content used for model training, what is the retention period (and can it be switched off), where are the servers, is there a transfer outside the EEA and on what basis, is there a data processing agreement (Article 28 GDPR), free tier or business tier (the terms can differ radically). If the user does not know - assume the worst variant and say so explicitly.
+**(e) Where the prompt goes.** The AI provider's terms: is prompt content used for model training, what is the retention period (and can it be switched off), where are the servers, is there a transfer outside the EEA and on what basis, what role the provider takes under GDPR (processor, controller, or joint controller) and - only where it acts as processor - is there a data processing agreement (Article 28 GDPR), free tier or business tier (the terms can differ radically). If the user does not know - assume the worst variant and say so explicitly.
 
 ## Workflow
 
@@ -78,7 +78,7 @@ One result block:
 - The five-factor table: score per factor plus the content fragment driving it.
 - The verdict: SAFE / CAUTION / STOP.
 - The disclosure impact, 2-3 sentences.
-- The recommendation: alternatives on STOP, the redacted draft on CAUTION, clear-to-send on SAFE.
+- The recommendation: alternatives on STOP, the redacted draft on CAUTION, and on SAFE "no risk factor identified - human approval still required before sending".
 - On CAUTION: the full redacted version, marked as a draft requiring human approval, with the post-redaction mosaic check result.
 - The closing line: "The decision belongs to a human. This workflow has sent nothing."
 
