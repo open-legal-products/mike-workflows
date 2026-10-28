@@ -1,0 +1,13 @@
+$schema: "../../workflow-schema/pack.schema.yaml"
+id: "china-labor"
+title: "China Labor Contract Pack"
+description: "English-language review of employment contracts governed by PRC (mainland) law against the mandatory rules of the Labor Contract Law (劳动合同法), its Implementing Regulations (劳动合同法实施条例), the Labor Law (劳动法), the Social Insurance Law (社会保险法) and the Supreme People's Court labor-dispute interpretations (I) and (II). Covers probation, probation pay, transfers and pay changes, working time, leave, social insurance, workplace rules, training and service periods, penalties and deposits, confidentiality, non-competes, termination and severance. Ratings are stated separately for the employer side and the employee side. The workflow drafts a review table; signing and negotiation stay with the lawyer or the client."
+publisher:
+  name: "1152405245hwc-coder"
+  url: "https://github.com/1152405245hwc-coder"
+license: "MIT"
+version: "0.1.0"
+practice: "Employment"
+jurisdiction: "People's Republic of China"
+workflows:
+  - "china-labor-contract-review"

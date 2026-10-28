@@ -1,0 +1,216 @@
+$schema: "../../../workflow-schema/table-columns.schema.yaml"
+columns:
+  - index: 0
+    name: "Employer"
+    format: "text"
+    prompt: >-
+      State the employer's full name and, where given, its unified social credit code, address and legal representative,
+      with the clause reference. If the name is written differently in different places, list each version. If not stated,
+      write "Not agreed".
+  - index: 1
+    name: "Employee and Position"
+    format: "text"
+    prompt: >-
+      State the employee's name and the position named in the contract. Do not reproduce identity-document numbers,
+      home address or phone number; state only whether the contract contains them (yes/no).
+  - index: 2
+    name: "Contract Type and Term"
+    format: "text"
+    prompt: >-
+      State the contract type (fixed term / open-ended / for completion of a specific task), start and end dates, signing
+      date and clause reference, and whether the contract renews automatically. Statutory position: a written contract must
+      be concluded within one month from the start of employment (Labor Contract Law (劳动合同法) Art. 10); after one month
+      without a written contract the employer owes double wages (Art. 82). The month runs from the actual start of work;
+      use a first day of work stated in the contract; otherwise take the stated start date as that start unless the user
+      gives a different date; if the contract states different dates and does not show which is the first day of work,
+      note an information gap. Note if the signing date is more
+      than one month after the start of employment, or if the start date is later than the stated start of work.
+  - index: 3
+    name: "Probation"
+    format: "text"
+    prompt: >-
+      State the probation length and clause reference and compare it with the contract term. Statutory caps (Labor Contract
+      Law Art. 19): term of three months to under one year, at most one month; one to under three years, at most two months;
+      three years or more or open-ended, at most six months; only one probation with the same employer; no probation for
+      task-based contracts or terms under three months. End with "Within cap" or "Exceeds cap by X months".
+  - index: 4
+    name: "Probation Pay"
+    format: "text"
+    prompt: >-
+      State probation pay and post-probation pay with clause references and give probation pay as a percentage of the agreed
+      wage. Statutory floor (Labor Contract Law Art. 20; Implementing Regulations (劳动合同法实施条例) Art. 15): at least
+      the local minimum wage, and the 80 percent test, which both provisions state as alternatives (the lowest same-post
+      wage, or 80 percent of it under Art. 15, or 80 percent of the agreed wage). State whether the statutory floor is
+      met, and separately whether the stricter standard position is met (at least 80 percent of the agreed wage and the
+      full lowest same-post wage); failing only the standard position is not a statutory breach. If the lowest
+      same-post wage is not stated, write "Same-post minimum not stated"; if the local minimum wage is needed, write
+      "Check local standard".
+  - index: 5
+    name: "Job and Place of Work"
+    format: "text"
+    prompt: >-
+      State the agreed position and place of work with clause references. Quote broad wording such as "nationwide" or
+      "any place designated by the company".
+  - index: 6
+    name: "Unilateral Transfer and Pay Change"
+    format: "text"
+    prompt: >-
+      Quote any clause allowing the employer to change position, place of work or pay unilaterally, with the clause
+      reference, and state the conditions attached (business need, reasonableness, no pay cut, same city, suited to
+      ability). Statutory position: amendment requires mutual agreement in writing (Labor Contract Law Art. 35). Note
+      separately any power to cut pay or move the employee to another city. If none, write "Not agreed".
+  - index: 7
+    name: "Remuneration"
+    format: "text"
+    prompt: >-
+      State the wage amount and structure (base, performance, bonus, allowances), pay day and clause references; whether
+      the wage is stated to include overtime pay; whether the employer may reduce pay unilaterally.
+  - index: 8
+    name: "Working Time and Overtime"
+    format: "text"
+    prompt: >-
+      State the working-hour system and overtime terms with clause references. Statutory position: overtime at least
+      150 percent of wages, rest-day work without time off in lieu at least 200 percent, statutory holidays at least 300
+      percent (Labor Law (劳动法) Art. 44). Weekly hours: compare a standard-hours contract against 8 hours a day and 40
+      hours a week (State Council Provisions on Working Hours of Employees (国务院关于职工工作时间的规定) Art. 3). Labor Law
+      Art. 36 still states 44 hours a week on average, but Ministry of Labour guidance (劳部发〔1995〕187号, Q9) states
+      that from 1 May 1997 overtime is calculated on a 40-hour week. State the contracted ordinary hours and end with
+      "40 or fewer", "Over 40, paid as overtime" or "Over 8 a day or 40 a week, not paid as overtime". Overtime is capped
+      at normally 1 hour a day, or 3 hours a day and 36 hours a month for special reasons (Labor Law Art. 41); add
+      "beyond the Art. 41 overtime limits" where the schedule or terms require more. For a
+      comprehensive or flexible working-hour system, note whether the contract mentions approval.
+  - index: 9
+    name: "Annual Leave"
+    format: "text"
+    prompt: >-
+      State annual leave and other leave terms with clause references. Statutory position (Regulations on Paid Annual
+      Leave for Employees (职工带薪年休假条例) Art. 3): 5 days after one full year of total working life, 10 days after
+      ten years, 15 days after twenty years. Note any lower figure or waiver, and note that total working years are needed
+      to confirm a shortfall.
+  - index: 10
+    name: "Social Insurance"
+    format: "text"
+    prompt: >-
+      State social-insurance terms with clause references: whether contributions are paid, from when (including during
+      probation) and on what base. Statutory position: the employer must register within 30 days of the start of
+      employment (Social Insurance Law (社会保险法) Art. 58); an agreement or promise not to pay is void (SPC Labor Dispute
+      Interpretation (II) (最高人民法院关于审理劳动争议案件适用法律问题的解释（二）) Art. 19). Quote any waiver or
+      cash-in-lieu clause. If the base is not stated, write "Base not stated".
+  - index: 11
+    name: "Workplace Rules"
+    format: "text"
+    prompt: >-
+      Quote the clause incorporating workplace rules with the clause reference. State whether specific rules are listed,
+      whether the employee has acknowledged them, and whether "rules adopted in future" also bind the employee. Statutory
+      position (Labor Contract Law Art. 4): rules directly affecting employees must go through the democratic procedure
+      and be published or notified.
+  - index: 12
+    name: "Training and Service Period"
+    format: "text"
+    prompt: >-
+      State any training agreement, service period, penalty amount or formula and clause references, and any repayment
+      of special benefits such as housing or relocation allowance. Statutory position (Labor Contract Law Art. 22): a
+      service period may be agreed only for employer-funded specialized technical training, and the penalty may not exceed
+      the training cost or the unperformed portion pro rata. Note whether the training is specialized and whether the
+      penalty is pro-rated.
+  - index: 13
+    name: "Penalties, Deductions and Deposits"
+    format: "bulleted_list"
+    prompt: |-
+      List every clause requiring the employee to pay a penalty, pre-set damages, wage deductions, a deposit or a
+      guarantee, one per line: clause reference, amount or formula, trigger.
+      Statutory position: penalties may be agreed only for service periods and non-competes (Labor Contract Law Art. 25);
+      the employer may not collect property, hold identity documents or require a guarantee (Labor Contract Law Art. 9).
+      End each line about any other penalty with "Outside statutory cases". If none, write "Not agreed".
+  - index: 14
+    name: "Confidentiality"
+    format: "text"
+    prompt: >-
+      State the scope, duration and liability for breach of confidentiality with clause references. Note any penalty
+      attached to confidentiality alone (not a statutory case for penalties under Labor Contract Law Art. 25).
+  - index: 15
+    name: "Non-Compete"
+    format: "text"
+    prompt: >-
+      State the employees covered, duration, scope of business and region, compensation (amount and payment method),
+      penalty and clause references. Statutory position (Labor Contract Law Arts. 23 and 24): limited to senior managers,
+      senior technical staff and others with confidentiality duties; at most two years after termination; compensation
+      paid monthly. Note if the duration exceeds two years. Distinguish a clause excluding compensation from compensation
+      simply not agreed: if not agreed, the restriction is not ineffective for that reason alone, and an employee who
+      complies may claim 30 percent of the prior twelve-month average monthly wage, not below the local minimum wage
+      (SPC Labor Dispute Interpretation (I) (最高人民法院关于审理劳动争议案件适用法律问题的解释（一）) Art. 36).
+  - index: 16
+    name: "Termination"
+    format: "text"
+    prompt: >-
+      State the employee's notice period, the employer's termination grounds and clause references. Statutory position:
+      the employee may resign on 30 days' written notice, 3 days during probation (Labor Contract Law Art. 37); employer
+      termination is limited to statutory grounds (Arts. 39, 40 and 41). An Art. 41 economic layoff needs one of its four
+      grounds (reorganization under the Enterprise Bankruptcy Law; serious operating difficulty; a change of products,
+      major technological innovation or adjustment of business methods where layoffs are still needed after amending the
+      contracts; or another major change in the objective economic circumstances that makes the contracts impossible to
+      perform). It applies where the employer is laying off 20 or more employees, or fewer than 20 but at least 10
+      percent of its total workforce, and requires 30 days' prior explanation to the union or all employees, hearing
+      their opinions, and a report of the layoff plan to the labor administration. Art. 42 protects listed employees
+      from Art. 40-41 termination. Note any longer notice, approval requirement or non-statutory ground such as forced
+      ranking, any clause expressly allowing layoffs for any business reason outside the Art. 41 grounds, and any
+      layoff clause that omits the Art. 41 grounds or conditions.
+  - index: 17
+    name: "Severance and Separation"
+    format: "text"
+    prompt: >-
+      State terms on severance, compensation for unlawful termination and separation settlement with clause references.
+      Note any waiver or reduction of severance. Statutory position: one month's wage per full year of service (Labor
+      Contract Law Art. 47); clauses exempting the employer from statutory liability or excluding employee rights are
+      invalid (Art. 26).
+  - index: 18
+    name: "Employee Personal Information"
+    format: "text"
+    prompt: >-
+      State the clauses on processing employee personal information with clause references: purpose, scope, whether
+      consent is blanket, sensitive information, background checks or monitoring. Statutory position (Personal
+      Information Protection Law (个人信息保护法) Art. 13): processing necessary for HR management under lawful workplace
+      rules and collective contracts does not require consent.
+  - index: 19
+    name: "Dispute Resolution"
+    format: "text"
+    prompt: >-
+      State the dispute-resolution clause with the clause reference. Quote any clause sending labor disputes to a
+      commercial arbitration body or court directly, or restricting labor dispute arbitration. Statutory position (Labor
+      Dispute Mediation and Arbitration Law (劳动争议调解仲裁法) Arts. 2 and 5): labor disputes go to a labor dispute
+      arbitration commission first, and to court only after the award, except as that law provides.
+  - index: 20
+    name: "Risk Rating"
+    format: "tag"
+    tags: ["Red line", "High", "Medium", "Low", "None found"]
+    prompt: >-
+      Give the highest rating found in this contract, from the side the user represents; if no side is given, use the
+      employer compliance view. Red line: breaches a mandatory rule (employee side: excludes or reduces a statutory right
+      or imposes a prohibited obligation; employer side: likely void or unenforceable, or exposes the employer to double
+      wages or statutory compensation), for example probation over the cap, probation pay below the local minimum or
+      failing every statutory 80 percent alternative, no or waived social insurance, a waiver of overtime pay or an
+      all-inclusive wage that excludes it, a schedule or term requiring overtime beyond the Labor Law Art. 41 limits, a service period or penalty for onboarding or routine training, any penalty
+      outside service periods and non-competes, a deposit or retained document, a power to cut pay or move the employee
+      to another city, a clause expressly allowing dismissal or layoffs outside the statutory grounds, a clause excluding
+      non-compete compensation, or, on the employer side, a signing date more than
+      one month after the start of employment (double-wage exposure under Labor Contract Law Art. 82; use a first day of
+      work stated in the contract, otherwise the stated start date, unless the user gives a different actual start date; if the start of employment or the
+      date a written contract was first concluded cannot be determined, treat it as an information gap). High: clearly unfavorable or a
+      quantifiable exposure but curable, for example unconditioned unilateral transfer, a training penalty above cost or
+      not pro-rated (the excess cannot be claimed, but the service-period agreement stays valid and is curable by
+      redrafting), non-compete compensation not agreed, a layoff clause
+      silent on the Art. 41 grounds or conditions, ordinary hours over 8 a day or 40 a week under the
+      standard-hours system not treated as overtime with overtime pay, social insurance on the minimum base, and on the employer side general incorporation of
+      future rules. Medium: short of standard but within acceptable fallback, for example hours above 40 a week that are
+      paid as overtime within the Labor Law Art. 41 limits (flag for negotiation or clarification), probation pay that meets the
+      statutory floor but not the stricter standard position (employee side), training costs not listed, fixed repayment
+      of special benefits, and on the employee side general incorporation of future rules or a back-dated start date.
+      Low: wording or numbering issues, or information gaps only. None found: none of the above.
+  - index: 21
+    name: "Key Issues"
+    format: "bulleted_list"
+    prompt: |-
+      List up to five issues from highest to lowest risk, one per line, in this form:
+      Issue | Clause and text | Risk | Deviation type | Authority | Replacement wording | If refused
+      Deviation type is one of: Missing, Weaker than standard, Beyond acceptable fallback, Red line, Drafting error.
+      Cite only authorities that appear in the column prompts above.

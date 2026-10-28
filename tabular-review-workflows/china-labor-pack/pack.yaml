@@ -1,0 +1,13 @@
+$schema: "../../workflow-schema/pack.schema.yaml"
+id: "china-labor"
+title: "China Labor Contract Tabular Reviews"
+description: "Tabular review of employment contracts governed by PRC (mainland) law. Each column records the contract term with its clause number next to the statutory position under the Labor Contract Law (劳动合同法), the Labor Law (劳动法), the Social Insurance Law (社会保险法) and related rules, so a reviewer comparing many contracts sees where each one departs from the mandatory rules. Column names and prompts are in English with Chinese statute names in parentheses."
+publisher:
+  name: "1152405245hwc-coder"
+  url: "https://github.com/1152405245hwc-coder"
+license: "MIT"
+version: "0.1.0"
+practice: "Employment"
+jurisdiction: "People's Republic of China"
+workflows:
+  - "china-labor-contract-tabular-review"
