@@ -1,0 +1,102 @@
+{
+  "synthetic": true,
+  "case": "PH27",
+  "documents": [
+    {
+      "id": "D1",
+      "file": "PH27-agreement.docx",
+      "title": "PH27 supply and integration agreement",
+      "parts": [
+        {
+          "location": "heading",
+          "text": "Synthetic evaluation fixture \u2014 no real transaction. PH27 agreement, signed 1 May 2027."
+        },
+        {
+          "location": "clause 1",
+          "text": "Mosaic Beacon Ltd. is the supplier and Pebble Harbor Ltd. is the buyer for project PH27, comprising one network-logging unit and related integration services."
+        },
+        {
+          "location": "clause 2",
+          "text": "The total base price is CAD 12,000: CAD 4,000 on signing and CAD 8,000 after delivery and signed written acceptance by the buyer project manager."
+        },
+        {
+          "location": "clause 3",
+          "text": "A demonstration, physical possession, or an oral comment does not constitute the signed written acceptance required by clause 2."
+        },
+        {
+          "location": "clause 4",
+          "text": "An extra charge requires written confirmation by both supplier and buyer."
+        },
+        {
+          "location": "execution",
+          "text": "Signed for Mosaic Beacon Ltd.: Supplier Director, 1 May 2027. Signed for Pebble Harbor Ltd.: Buyer Director, 1 May 2027."
+        }
+      ]
+    },
+    {
+      "id": "D2",
+      "file": "PH27-deposit-receipt.docx",
+      "title": "Deposit acknowledgment",
+      "parts": [
+        {
+          "location": "paragraph 1",
+          "text": "7 May 2027. From Mosaic Beacon Ltd. to Pebble Harbor Ltd. Project PH27."
+        },
+        {
+          "location": "paragraph 2",
+          "text": "We acknowledge receipt of your CAD 4,000 signing deposit for PH27. Thank you."
+        },
+        {
+          "location": "paragraph 3",
+          "text": "This acknowledgment does not state a remaining balance."
+        }
+      ]
+    },
+    {
+      "id": "D3",
+      "file": "PH27-correspondence.docx",
+      "title": "PH27 delivery correspondence",
+      "parts": [
+        {
+          "location": "message 1 header",
+          "text": "12 May 2027. From Pebble Harbor Ltd., Buyer Project Manager, to Mosaic Beacon Ltd. Subject: PH27 demo and testing."
+        },
+        {
+          "location": "message 1 body",
+          "text": "We received the unit and attended the demonstration today. Network logging is still failing in our test environment. This message is expressly not our signed written acceptance. Please arrange further testing."
+        },
+        {
+          "location": "message 2 header",
+          "text": "14 May 2027. From Mosaic Beacon Ltd., Supplier Director, to Pebble Harbor Ltd. Subject: PH27 delivery complete. Attachment listed: invoice-F17.pdf."
+        },
+        {
+          "location": "message 2 body",
+          "text": "Our position is that delivery is complete. At the demonstration your engineer said the unit \"looks good\". We regard that comment and your possession of the unit as acceptance. Invoice F17 is attached."
+        }
+      ]
+    },
+    {
+      "id": "D4",
+      "file": "PH27-demand.docx",
+      "title": "PH27 payment demand",
+      "parts": [
+        {
+          "location": "heading",
+          "text": "20 May 2027. From Mosaic Beacon Ltd. to Pebble Harbor Ltd. Re: PH27 and invoice F17."
+        },
+        {
+          "location": "paragraph 1",
+          "text": "You accepted the unit at the 12 May demonstration. Nothing has been paid. We demand CAD 12,000 plus the agreed fast-track charge of CAD 1,500, for a total of CAD 13,500."
+        },
+        {
+          "location": "paragraph 2",
+          "text": "You must respond by 22 May 2027. That deadline is binding. If you do not comply, we intend to commence litigation."
+        },
+        {
+          "location": "paragraph 3",
+          "text": "Our claim relies on the agreement, acceptance at the demonstration, invoice F17 and the agreed fast-track charge."
+        }
+      ]
+    }
+  ]
+}
