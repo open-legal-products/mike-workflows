@@ -1,0 +1,15 @@
+{
+  "purpose": "Held-out evidence review; fictional. Review-only. Do not include this material in candidate inputs or publication-bound source packets.",
+  "material_findings": [
+    "Prototype approval on 12 August is genuine and triggers the stage-two instalment; absence of final acceptance does not eliminate that adverse evidence.",
+    "Delivery on 31 August is supported, but the docket expressly qualifies receipt and contract separates delivery, prototype approval and final signed acceptance. Final acceptance or final instalment accrual is unverified.",
+    "4200 deposit cleared. The first 2100 cleared but was reallocated from this project to a disputed older invoice without a buyer instruction in the packet; its proper allocation needs reconciliation.",
+    "The second 2100 was reversed in full, so it must not be counted as a completed payment. Counting both August transfers as paid understates the issue.",
+    "If the first 2100 is applied to stage two, its residual is 2100; if the reallocation stands, it is 4200. Neither conditional illustration establishes the complete payable balance: opening credits and older account history are missing, and final milestone remains unverified.",
+    "The demand’s 8400 is its claimed project balance using deposit-only allocation; total 8850 adds 450. Arithmetic is coherent on that assumption, but assumptions and storage authorization lack verification.",
+    "Buyer has preliminary evidence of damage and requested inspection. The documents do not establish whether the planned 8 September inspection happened. Do not invent that it occurred or that Supplier definitely missed it.",
+    "17 September is a plausible five-business-day count if receipt were 10 September, but sending does not establish receipt: mail status was pending. Clause 9 instead states ten calendar days after receipt for response and joint review, without five-business-day payment acceleration. The demand’s asserted basis and deadline need verification.",
+    "An earlier credit is asserted, not proved. Do not invent its value, treat the project account export as complete, or assert a definitive final net balance."
+  ],
+  "verification_rationale": "A sound review should trace cleared/reversed/reallocated transactions, preserve actual prototype approval, distinguish delivery from acceptance, give conditional arithmetic with limitations and identify the unresolved receipt and contractual basis for the demand deadline. Full-account reconciliation, bank allocation evidence, any credit note, acceptance/inspection evidence and notice-delivery evidence are material verification requests. No external legal conclusion is expected."
+}

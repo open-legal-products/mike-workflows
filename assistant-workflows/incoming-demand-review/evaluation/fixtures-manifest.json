@@ -1,0 +1,81 @@
+{
+  "algorithm": "SHA-256",
+  "author": "Lawyered",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "3a136a99294e34b4b13825a1bc1c9f781b69693fdaec778e0c7f358cf861bc6e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4650,
+      "sha256": "73bdd6f34ba24f63fa62209f2a6f0c40c00d412aec9760adb4201a8e01e716eb"
+    },
+    {
+      "path": "fixtures.py",
+      "bytes": 10673,
+      "sha256": "6d25b372fa66232695e822c9e5ecf7e0847ecf40fdf5fb62f11bd99104ada5d1"
+    },
+    {
+      "path": "inputs/alder/canonical.json",
+      "bytes": 6012,
+      "sha256": "a6bcc566bb008b23f2ce487c92366830e30ff2e67660fa95cbe7efc5bc0780f0"
+    },
+    {
+      "path": "inputs/alder/request.txt",
+      "bytes": 236,
+      "sha256": "34ca2df7727e89ee4922cd0d374019cf6da9d754929324fb85b441050e32faec"
+    },
+    {
+      "path": "inputs/nightjar/canonical.json",
+      "bytes": 4826,
+      "sha256": "ebb7e9073f33e6d1c3bdcd03e3aa2b588f6511df30e9399b6dd59f511331839b"
+    },
+    {
+      "path": "inputs/nightjar/request.txt",
+      "bytes": 235,
+      "sha256": "f96ec86df93d8009b9b2f4b1c8cab85553cde9caa9df2782dcdaeee899856844"
+    },
+    {
+      "path": "inputs/ph27/request.txt",
+      "bytes": 143,
+      "sha256": "22bbca4ece831c3f8f64d499ba4277bdf2edfd9660fc04d1c59abc6290a721d9"
+    },
+    {
+      "path": "inputs/ph27/source-packet.json",
+      "bytes": 4028,
+      "sha256": "1a22f625dbb600941fa67693cc0c497d1d3047e99a8ce6e024f9ce6386cc8742"
+    },
+    {
+      "path": "inputs/tideglass/canonical.json",
+      "bytes": 5753,
+      "sha256": "4005c80f395b5f2f4f093ce34e91c2108560af4a63d8a80904e05bbf6904ae17"
+    },
+    {
+      "path": "inputs/tideglass/request.txt",
+      "bytes": 237,
+      "sha256": "3ab2cb08b121e3d0c23e3a558b6fdcab2b741022b33fbf631b3a9418eb8e3cce"
+    },
+    {
+      "path": "review-only/alder-checks.json",
+      "bytes": 2684,
+      "sha256": "d8696957eb914ff13871b70d661f51a444ae5970c0b5b46ebc892589a6e53922"
+    },
+    {
+      "path": "review-only/nightjar-checks.json",
+      "bytes": 1690,
+      "sha256": "64c826e5db42889f43ef133c0cbad94fe4f70c5bd19d3ffd3468a7eadea44615"
+    },
+    {
+      "path": "review-only/ph27-scorecard.json",
+      "bytes": 6117,
+      "sha256": "f8cd4df91b8bdec661d710a647fd2313ec4cbe60ef0a44c2715591fd543312d6"
+    },
+    {
+      "path": "review-only/tideglass-checks.json",
+      "bytes": 3118,
+      "sha256": "d87b840e6ea3548362a824d11c2c06f04a564bbfd8c3861b42bcdd328e12e1ef"
+    }
+  ]
+}

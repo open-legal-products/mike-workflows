@@ -1,0 +1,27 @@
+{
+  "case_id": "case-a-nightjar",
+  "fictional": true,
+  "attribution": "Lawyered",
+  "documents": [
+    {
+      "id": "01-contract",
+      "title": "Contract",
+      "text": "NIGHTJAR BOOKING KIT — SIGNED SERVICES AGREEMENT\nParties: Halcyon Kite Rentals Ltd. (Buyer) and Eastbank Signal Studio Ltd. (Studio).\nAgreement date: 2 July 2026. Project reference: NK-42. Currency: CAD. All amounts include applicable taxes.\n1. Studio will deliver a booking microsite, staff guide and editable artwork. Fixed price: $8,400. A $4,200 deposit is due on signing; the remaining $4,200 is due 14 calendar days after Buyer's written acceptance.\n2. Uploading files or enabling a preview is delivery only. Acceptance requires a written approval signed by Buyer's authorized project lead. Buyer may accept with listed minor corrections.\n3. Extra work and its fee require written approval signed by both parties before that work starts. An approved extra fee is payable on the same date as the remaining fixed price unless that approval states otherwise.\n4. Studio will correct listed minor defects without an additional charge. This agreement states no collection or administration surcharge.\nSigned for Buyer: L. Venn, project lead — electronic signature recorded 2 July 2026.\nSigned for Studio: R. Holt, director — electronic signature recorded 2 July 2026.\nBoth signatories confirm authority to sign this agreement."
+    },
+    {
+      "id": "02-payment-record",
+      "title": "Payment record",
+      "text": "NIGHTJAR BOOKING KIT — PAYMENT AND INVOICE EXTRACT\nStudio accounts export, created 3 August 2026 at 09:10. Project: NK-42. Currency: CAD. Tax-inclusive amounts.\nInvoice NK-4201: fixed price $8,400, dated 2 July 2026; $4,200 deposit due 2 July; $4,200 remaining due 30 July 2026 following acceptance on 16 July.\nInvoice NK-4202: approved multilingual extra $1,600, dated 16 July 2026; due 30 July 2026.\n3 July 2026: $4,200 received by bank transfer; cleared; applied to NK-4201.\n22 July 2026: $1,800 received by bank transfer; cleared; applied to NK-4201.\n3 August balances: NK-4201 $2,400; NK-4202 $1,600; total invoiced balance $4,000.\nNo credit note, refund, reversal or further receipt appears in this project extract through 3 August 2026 at 09:10. The export contains no collection-charge invoice."
+    },
+    {
+      "id": "03-correspondence",
+      "title": "Correspondence",
+      "text": "NIGHTJAR BOOKING KIT — PROJECT CORRESPONDENCE AND SIGNED APPROVALS\n9 July 2026, Buyer to Studio: Please add the French booking flow described in your attached change note CN-3 for an extra $1,600 inclusive of tax. I approve that fee and the existing payment terms. Please start tomorrow.\nCN-3 approval, signed electronically 9 July 2026: L. Venn for Buyer — APPROVED; R. Holt for Studio — APPROVED. The approval record identifies NK-42, the French booking flow and the $1,600 extra fee. Both signatures are recorded before work began on 10 July.\n14 July 2026, Studio to Buyer: The files and live preview are delivered. Please review and sign the acceptance below.\n16 July 2026, signed acceptance certificate AC-NK42: I accept the booking microsite, staff guide, editable artwork and CN-3 French booking flow. Two minor corrections remain: swap the footer telephone number and fix the guide's page 4 typo. These corrections do not prevent this acceptance. Signed electronically: L. Venn, authorized project lead for Halcyon Kite Rentals Ltd., 16 July 2026. Studio acknowledgment signed: R. Holt, 16 July 2026.\n20 July 2026, Studio to Buyer: The two listed corrections are complete; revised files are linked here.\n21 July 2026, Buyer to Studio: I see both corrections. Cash is tight; we can pay $1,800 tomorrow and expect to clear the rest in August. I am not disputing either project invoice.\n2 August 2026, Buyer to Studio: Your latest reminder adds $300 for collection administration. Please identify where we agreed to that charge. We have not agreed to a new payment date."
+    },
+    {
+      "id": "04-demand",
+      "title": "Demand",
+      "text": "FORMAL PAYMENT DEMAND — NIGHTJAR BOOKING KIT\nFrom: Eastbank Signal Studio Ltd. To: Halcyon Kite Rentals Ltd.\nDate: 3 August 2026. Reference: NK-42.\nThe accepted base work cost $8,400 and the approved French booking extra cost $1,600. Payments total $6,000. The unpaid invoice balance is $4,000, due on 30 July 2026.\nWe also claim a $300 collection administration charge incurred in pursuing payment. Total demanded: $4,300.\nPay $4,300 by 10 August 2026. We reserve all remedies if payment is not received. The project was delivered on 14 July and accepted on 16 July. Copies of the two invoices are summarized in the payment extract.\nThis demand does not enclose any agreement or invoice authorizing the $300 charge."
+    }
+  ]
+}

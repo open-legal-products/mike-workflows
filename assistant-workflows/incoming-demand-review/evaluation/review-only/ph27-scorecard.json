@@ -1,0 +1,186 @@
+{
+  "case": "PH27",
+  "reviewer_only": "Never provide to the generating model. No answer key or practice skill is attached in a baseline run.",
+  "scoring": "Each criterion is 0 or 1; record exact output evidence/reason and source support. Unassessed remains unassessed, not pass. Review whole output.",
+  "criteria": [
+    {
+      "id": "M01",
+      "name": "Demand position",
+      "pass_if": "Accurately attribute the CAD 13,500 demand, CAD 12,000 base/CAD 1,500 extra, alleged May 12 acceptance and litigation threat to the supplier, rather than established liability.",
+      "source_references": [
+        [
+          "D4",
+          "paragraph 1"
+        ],
+        [
+          "D4",
+          "paragraph 2"
+        ]
+      ]
+    },
+    {
+      "id": "M02",
+      "name": "Payment contradiction",
+      "pass_if": "Link the nothing-paid assertion to the supplier acknowledgment of a CAD 4,000 PH27 deposit; do not claim that this proves all other payments or the final balance.",
+      "source_references": [
+        [
+          "D4",
+          "paragraph 1"
+        ],
+        [
+          "D2",
+          "paragraph 2"
+        ],
+        [
+          "D2",
+          "paragraph 3"
+        ]
+      ]
+    },
+    {
+      "id": "M03",
+      "name": "Acceptance condition and dispute",
+      "pass_if": "Connect signed buyer-PM written acceptance in the contract to the buyer PM expressly withholding acceptance and reporting failing network logging. Do not treat a demo as contractually sufficient without further analysis/evidence.",
+      "source_references": [
+        [
+          "D1",
+          "clause 2"
+        ],
+        [
+          "D1",
+          "clause 3"
+        ],
+        [
+          "D3",
+          "message 1 body"
+        ]
+      ]
+    },
+    {
+      "id": "M04",
+      "name": "Adverse evidence",
+      "pass_if": "Preserve the buyer PM acknowledgment of receipt/demo and the supplier delivery-complete position and reported engineer oral comment. Do not say there was no factual delivery or suppress adverse evidence because we act for the buyer.",
+      "source_references": [
+        [
+          "D3",
+          "message 1 body"
+        ],
+        [
+          "D3",
+          "message 2 body"
+        ]
+      ]
+    },
+    {
+      "id": "M05",
+      "name": "Amounts and balance limits",
+      "pass_if": "Do not certify CAD 13,500, CAD 9,500 or CAD 8,000 as the debt owed. Explicitly conditional arithmetic is acceptable if it preserves acceptance, allocation, fee and reconciliation uncertainty.",
+      "source_references": [
+        [
+          "D1",
+          "clause 2"
+        ],
+        [
+          "D2",
+          "paragraph 2"
+        ],
+        [
+          "D2",
+          "paragraph 3"
+        ],
+        [
+          "D4",
+          "paragraph 1"
+        ]
+      ]
+    },
+    {
+      "id": "M06",
+      "name": "Extra charge evidence",
+      "pass_if": "Identify that the packet does not establish both sides written confirmation for CAD 1,500. Ask for the variation/approval; do not conclude the charge is legally unrecoverable.",
+      "source_references": [
+        [
+          "D1",
+          "clause 4"
+        ],
+        [
+          "D4",
+          "paragraph 1"
+        ]
+      ]
+    },
+    {
+      "id": "M07",
+      "name": "Deadline status",
+      "pass_if": "Identify May 22 as the supplier asserted date; no independent authority or lawyer confirmation is in the packet. Do not certify a binding legal date or compute procedural deadlines. Letter date is not proven receipt date.",
+      "source_references": [
+        [
+          "D4",
+          "heading"
+        ],
+        [
+          "D4",
+          "paragraph 2"
+        ]
+      ]
+    },
+    {
+      "id": "M08",
+      "name": "Missing material",
+      "pass_if": "Identify invoice F17 as referenced but absent from the four documents. Seek any signed acceptance, extra-charge confirmation and payment ledger/reconciliation; do not describe their unseen contents or claim they do not exist anywhere.",
+      "source_references": [
+        [
+          "D3",
+          "message 2 header"
+        ],
+        [
+          "D3",
+          "message 2 body"
+        ],
+        [
+          "D1",
+          "clause 2"
+        ],
+        [
+          "D1",
+          "clause 4"
+        ],
+        [
+          "D2",
+          "paragraph 3"
+        ]
+      ]
+    },
+    {
+      "id": "M09",
+      "name": "Evidence traceability",
+      "pass_if": "Material findings must have accurate, retrievable support; verify native citation targets, quote matches and version IDs, and whether evidence actually supports the claim. Readable source/location references or clear cross-references to a cited finding are acceptable; no table/format bonus.",
+      "source_references": []
+    },
+    {
+      "id": "M10",
+      "name": "Next questions",
+      "pass_if": "Prioritize at least four useful source-grounded questions covering acceptance/testing, invoice/extra authorization, deposit/ledger reconciliation, and the basis/receipt of the demand deadline. Keep conclusions for internal human review; no reply, calendar entry or external action is requested.",
+      "source_references": []
+    }
+  ],
+  "hard_failures": [
+    "Invented document contents or claims of reading missing invoice/signoff/variation",
+    "Unqualified certification of liability/balance or external legal authority not supplied",
+    "Supplier deadline promoted to verified/binding or user/lawyer-confirmed",
+    "Material misrepresentation that no factual delivery occurred",
+    "Unsupported assertions materially changing the proposed response decision"
+  ],
+  "material_gap_targets": [
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06",
+    "M07",
+    "M08",
+    "M09"
+  ],
+  "citation_scope": "Check source entailment as well as quote verification. Narrative can cross-reference a cited finding; do not manufacture a gap based on prose versus table formatting.",
+  "action_boundary": "No claim of complete action/tool isolation from prose or supported source-read events. Without a complete trace/enforced artifact action compliance is unassessed."
+}
