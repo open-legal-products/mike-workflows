@@ -1,0 +1,97 @@
+$schema: "../../../workflow-schema/table-columns.schema.yaml"
+columns:
+  - index: 0
+    name: "Employeur"
+    format: "text"
+    prompt: >-
+      Qui est l'employeur ? Indiquez la raison sociale complète, le siège et, si elle est mentionnée, le numéro IDE.
+  - index: 1
+    name: "Travailleur"
+    format: "text"
+    prompt: >-
+      Qui est le travailleur ? Indiquez le nom et, s'il est mentionné, le lieu de domicile.
+  - index: 2
+    name: "Date du contrat et entrée en fonction"
+    format: "date"
+    prompt: >-
+      Quelle date porte le contrat ? Si l'entrée en fonction diffère de la date du contrat, indiquez les deux dates.
+  - index: 3
+    name: "Fonction et taux d'occupation"
+    format: "text"
+    prompt: >-
+      Quelle fonction le travailleur assume-t-il ? Indiquez la fonction, la subordination, le lieu de travail et le taux d'occupation (pourcentage ou heures hebdomadaires) avec la référence de la clause.
+  - index: 4
+    name: "Durée"
+    format: "text"
+    prompt: >-
+      Les rapports de travail sont-ils de durée indéterminée ou déterminée ? Indiquez une date de fin et une règle de prolongation. Régime légal : un contrat de durée déterminée prend fin sans congé ; s'il dure plus de dix ans, il peut être résilié moyennant un délai de congé de six mois (art. 334 CO).
+  - index: 5
+    name: "Temps d'essai"
+    format: "text"
+    prompt: >-
+      Quel temps d'essai le contrat prévoit-il ? Indiquez la durée, la règle de prolongation et le délai de congé pendant le temps d'essai avec la référence de la clause. Régime légal : un mois, jusqu'à trois mois au plus par accord écrit, délai de congé de sept jours (art. 335b CO). Signalez toute dérogation.
+  - index: 6
+    name: "Délais de congé"
+    format: "text"
+    prompt: >-
+      Quels délais et termes de congé s'appliquent après le temps d'essai à chaque partie, et quelle forme est prévue ? Régime légal : un mois durant la première année de service, deux mois de la deuxième à la neuvième, trois mois ensuite, pour la fin d'un mois ; délais de même durée pour les deux parties (art. 335a et 335c CO). Délai inférieur à un mois uniquement par convention collective de travail et seulement pour la première année de service (art. 335c al. 2 CO). Signalez les délais inégaux ou plus courts.
+  - index: 7
+    name: "Salaire"
+    format: "monetary_amount"
+    prompt: >-
+      Quel est le salaire brut ? Indiquez le montant, la monnaie, la période (mois ou année), le nombre de salaires mensuels et les allocations avec la référence de la clause (art. 322 CO).
+  - index: 8
+    name: "Bonus et gratification"
+    format: "text"
+    prompt: >-
+      Quelle rémunération variable, quel bonus ou quelle gratification est prévu ? Indiquez s'il existe un droit ou si le versement relève du pouvoir d'appréciation, les critères, le montant, l'exigibilité et la règle en cas de départ en cours d'année (art. 322d CO). Répondez «Aucun» si rien n'est convenu.
+  - index: 9
+    name: "Temps de travail et heures supplémentaires"
+    format: "text"
+    prompt: >-
+      Quelle durée hebdomadaire de travail s'applique, et comment les heures supplémentaires sont-elles traitées (compensation, supplément de 25 pour cent, exclusion par écrit, indemnisation forfaitaire) ? Régime légal : les heures supplémentaires sont compensées par un congé ou payées avec un supplément de 25 pour cent, sauf accord écrit contraire (art. 321c CO). Le travail supplémentaire au-delà de la durée maximale hebdomadaire de 45 ou 50 heures reste dû selon les art. 9, 12 et 13 LTr.
+  - index: 10
+    name: "Maintien du salaire en cas de maladie et d'accident"
+    format: "text"
+    prompt: >-
+      Pendant combien de temps et à quelle hauteur le salaire est-il maintenu en cas de maladie et d'accident ? Indiquez une assurance perte de gain maladie avec l'indemnité journalière, le délai d'attente, la durée des prestations et la répartition des primes. Régime légal : trois semaines durant la première année de service, puis une période plus longue fixée équitablement (art. 324a al. 1 et 2 CO) ; une solution d'assurance doit être équivalente et convenue par écrit (art. 324a al. 4 CO).
+  - index: 11
+    name: "Vacances"
+    format: "text"
+    prompt: >-
+      Combien de semaines ou de jours de vacances par an sont convenus, et quelles règles s'appliquent à la prise, au report et à l'indemnisation ? Régime légal : quatre semaines, cinq semaines jusqu'à l'âge de 20 ans révolus (art. 329a CO) ; une indemnité en espèces pendant les rapports de travail est inadmissible (art. 329d al. 2 CO).
+  - index: 12
+    name: "Prohibition de concurrence présente"
+    format: "yes_no"
+    prompt: >-
+      Le contrat contient-il une prohibition de concurrence postcontractuelle ? Répondez Oui ou Non et indiquez la clause.
+  - index: 13
+    name: "Portée de la prohibition de concurrence"
+    format: "text"
+    prompt: >-
+      Comment une prohibition de concurrence postcontractuelle est-elle limitée quant au lieu, au temps et à l'objet, et quelles sont les conséquences d'une violation (peine conventionnelle, dommages-intérêts, exécution en nature, indemnité de carence) ? Régime légal : forme écrite et connaissance de la clientèle ou des secrets de fabrication ou d'affaires (art. 340 CO), limitation quant au lieu, au temps et à l'objet, trois ans au plus (art. 340a CO), conséquences selon l'art. 340b CO, caducité selon l'art. 340c CO. Répondez «Aucune» si aucune prohibition n'est convenue.
+  - index: 14
+    name: "Confidentialité et activités accessoires"
+    format: "text"
+    prompt: >-
+      Quelles obligations de confidentialité s'appliquent pendant et après les rapports de travail, et quelles règles s'appliquent aux activités accessoires et à leur autorisation ? Régime légal : devoir de fidélité et de discrétion selon l'art. 321a al. 3 et 4 CO.
+  - index: 15
+    name: "Droits de propriété intellectuelle"
+    format: "text"
+    prompt: >-
+      À qui appartiennent les inventions, les designs, les logiciels et les autres résultats du travail ? Indiquez les réserves pour les inventions occasionnelles et une rémunération. Régime légal : les inventions de service appartiennent à l'employeur, les inventions occasionnelles seulement par accord écrit et contre une rémunération équitable (art. 332 CO) ; les droits d'utilisation des logiciels reviennent à l'employeur selon l'art. 17 LDA, les droits sur les autres œuvres seulement par cession.
+  - index: 16
+    name: "Protection des données et surveillance"
+    format: "text"
+    prompt: >-
+      Quelles règles s'appliquent au traitement des données personnelles, à l'utilisation des moyens informatiques et à la surveillance ? Régime légal : données uniquement dans la mesure où elles portent sur les rapports de travail (art. 328b CO) ; aucun système de surveillance du comportement (art. 26 OLT 3).
+  - index: 17
+    name: "CCT, CTT et règlements"
+    format: "text"
+    prompt: >-
+      Quelles conventions collectives de travail, quels contrats-types de travail, règlements, directives ou annexes s'appliquent selon le contrat, dans quel ordre de priorité, et l'employeur peut-il les modifier unilatéralement ? Indiquez les références (art. 357 CO).
+  - index: 18
+    name: "Droit applicable et for"
+    format: "text"
+    prompt: >-
+      Quel droit et quel for sont convenus ? Régime légal : for au domicile ou au siège de la partie défenderesse ou au lieu habituel du travail (art. 34 CPC) ; le travailleur ne peut y renoncer d'avance (art. 35 CPC) ; l'élection de droit est limitée en cas d'élément d'extranéité (art. 121 LDIP).

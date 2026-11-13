@@ -1,0 +1,117 @@
+$schema: "../../../workflow-schema/table-columns.schema.yaml"
+columns:
+  - index: 0
+    name: "Parties"
+    format: "bulleted_list"
+    prompt: >-
+      Quelles sont les parties à la convention d'actionnaires ? Indiquez pour chaque partie le nom complet ou la raison sociale, le siège ou le domicile et le rôle (fondateur, investisseur, actionnaire minoritaire, collaborateur, société en tant que partie).
+  - index: 1
+    name: "Société"
+    format: "text"
+    prompt: >-
+      À quelle société le contrat se rapporte-t-il ? Indiquez la raison sociale, le siège, le capital-actions et les catégories d'actions avec valeur nominale et droit de vote, dans la mesure où le contrat les mentionne.
+  - index: 2
+    name: "Date du contrat"
+    format: "date"
+    prompt: >-
+      Quelle date porte le contrat ? Indiquez aussi une entrée en vigueur différente ou une condition suspensive.
+  - index: 3
+    name: "Participations"
+    format: "bulleted_list"
+    prompt: >-
+      Comment les actions sont-elles réparties ? Indiquez pour chaque actionnaire le nombre d'actions, la catégorie, la valeur nominale et la part du capital et des voix, y compris, si elle est indiquée, sur une base entièrement diluée.
+  - index: 4
+    name: "Durée et fin"
+    format: "text"
+    prompt: >-
+      Quelle est la durée du contrat, et comment prend-il fin (durée fixe, prolongation, résiliation, sortie en cas de vente de toutes les actions, motifs de fin) ? Régime légal : une convention d'actionnaires est en règle générale une société simple (art. 530 CO) ; en cas de durée indéterminée, chaque partie peut résilier moyennant un délai de six mois (art. 546 CO) ; un engagement excessif est inadmissible (art. 27 al. 2 CC).
+  - index: 5
+    name: "Engagement de vote"
+    format: "text"
+    prompt: >-
+      Sur quels objets les parties s'engagent-elles à voter de manière uniforme à l'assemblée générale, et comment la position commune est-elle formée (assemblée préalable, majorité, représentation du droit de vote) ? Indiquez si des instructions aux membres du conseil d'administration sont prévues. Régime légal : un engagement de vote ne produit d'effet qu'entre les parties et ne lie pas la société ; les membres du conseil d'administration restent tenus à leur devoir de diligence et de fidélité (art. 717 CO).
+  - index: 6
+    name: "Conseil d'administration"
+    format: "text"
+    prompt: >-
+      Comment le conseil d'administration est-il composé ? Indiquez la taille, les droits de nomination de chaque partie ou groupe avec seuil de participation, la présidence, la voix prépondérante et l'obligation d'élire les candidats proposés. Régime légal : élection par l'assemblée générale (art. 698 al. 2 ch. 2 CO) ; les statuts peuvent assurer une représentation à des catégories d'actionnaires ou à des groupes (art. 709 CO).
+  - index: 7
+    name: "Décisions importantes et droits de veto"
+    format: "bulleted_list"
+    prompt: >-
+      Quelles décisions de l'assemblée générale ou du conseil d'administration requièrent une majorité qualifiée, l'unanimité ou le consentement d'une partie déterminée ? Indiquez pour chaque objet le quorum ou la partie qui doit consentir. Régime légal : décisions importantes aux deux tiers des voix représentées et à la majorité des valeurs nominales représentées (art. 704 CO).
+  - index: 8
+    name: "Restriction de la transmissibilité et limites au transfert"
+    format: "text"
+    prompt: >-
+      Quelles restrictions s'appliquent au transfert d'actions (périodes de blocage, réserves de consentement, transferts admis à des proches, interdiction de nantissement) ? Indiquez si le contrat exige une restriction statutaire de la transmissibilité. Régime légal : les actions nominatives sont librement transmissibles, sauf disposition contraire des statuts (art. 684 et 685a ss CO).
+  - index: 9
+    name: "Droits de préférence et de préemption"
+    format: "text"
+    prompt: >-
+      Existe-t-il des droits de préférence, des droits de préemption ou des droits d'emption en cas de transfert envisagé ? Indiquez les bénéficiaires, le déclenchement, les délais, la procédure et la détermination du prix ou la méthode d'évaluation.
+  - index: 10
+    name: "Droits d'emption et de vente en cas de sortie"
+    format: "text"
+    prompt: >-
+      Quels droits d'emption (call) ou droits de vente (put) existent lors d'événements tels que la résiliation des rapports de travail, le décès, la faillite, le changement de contrôle ou la violation du contrat (good leaver, bad leaver) ? Indiquez le déclencheur, les bénéficiaires, les délais et la formule de prix.
+  - index: 11
+    name: "Obligation de sortie conjointe (drag-along)"
+    format: "text"
+    prompt: >-
+      Existe-t-il une obligation de sortie conjointe ? Indiquez qui peut la déclencher, le seuil de participation requis, le prix minimal ou l'évaluation, les obligations des parties qui vendent conjointement et les règles de protection des minoritaires. Répondez «Aucune» si rien n'est convenu.
+  - index: 12
+    name: "Droit de sortie conjointe (tag-along)"
+    format: "text"
+    prompt: >-
+      Existe-t-il un droit de sortie conjointe ? Indiquez les bénéficiaires, la vente déclenchante, la procédure avec les délais, le prix et les conditions de la sortie conjointe, ainsi que les exceptions. Répondez «Aucun» si rien n'est convenu.
+  - index: 13
+    name: "Droits de souscription préférentiels et protection contre la dilution"
+    format: "text"
+    prompt: >-
+      Quels droits de souscription préférentiels et quelles règles de protection contre la dilution s'appliquent lors d'augmentations de capital (étendue, procédure, exceptions telles que les participations de collaborateurs, formule d'ajustement) ? Régime légal : chaque actionnaire a un droit de souscription préférentiel proportionnel à sa participation ; l'assemblée générale ne peut le limiter ou le supprimer que pour de justes motifs (art. 652b CO).
+  - index: 14
+    name: "Politique de dividendes"
+    format: "text"
+    prompt: >-
+      Quelles règles s'appliquent aux dividendes (taux de distribution, dividendes privilégiés, thésaurisation, exigences de consentement) ? Régime légal : l'assemblée générale décide de l'emploi du bénéfice résultant du bilan (art. 698 al. 2 ch. 4 CO), sous réserve des réserves légales (art. 671 ss CO).
+  - index: 15
+    name: "Financement et obligations de versements supplémentaires"
+    format: "text"
+    prompt: >-
+      Les parties s'engagent-elles à des financements, prêts, garanties ou versements supplémentaires ? Indiquez l'étendue, le déclencheur et les conséquences en cas d'inexécution. Régime légal : l'actionnaire n'est tenu que de libérer ses actions ; d'autres obligations n'existent que par contrat (art. 680 al. 1 CO).
+  - index: 16
+    name: "Prohibition de concurrence et de débauchage"
+    format: "text"
+    prompt: >-
+      Des parties sont-elles soumises à une prohibition de concurrence ou de débauchage ? Indiquez les personnes liées, l'objet, le territoire, la durée pendant et après la participation, ainsi que les exceptions. Régime légal : l'engagement ne doit pas être excessif (art. 27 al. 2 CC).
+  - index: 17
+    name: "Situation de blocage"
+    format: "text"
+    prompt: >-
+      Comment une situation de blocage est-elle résolue (escalade, médiation, voix prépondérante, procédure d'achat ou de vente telle que russian roulette ou Texas shoot-out, dissolution) ? Indiquez le déclencheur, la procédure et les conséquences en cas d'échec de la solution. Répondez «Aucune disposition» si le contrat est muet.
+  - index: 18
+    name: "Sortie (exit)"
+    format: "text"
+    prompt: >-
+      Quelles règles de sortie existent (vente de la société, introduction en bourse, délais ou jalons, droit d'une partie de déclencher un processus de vente, préférences de liquidation, répartition du produit) ?
+  - index: 19
+    name: "Peine conventionnelle"
+    format: "monetary_amount"
+    prompt: >-
+      Quelle peine conventionnelle est convenue en cas de violation du contrat ? Indiquez le montant ou la formule, les violations déclenchantes et le rapport avec les dommages-intérêts. Régime légal : la peine est due sans preuve du dommage ; des dommages-intérêts supplémentaires ne sont dus qu'en cas de faute ; le juge peut réduire une peine excessive (art. 160, 161 et 163 CO).
+  - index: 20
+    name: "Confidentialité"
+    format: "text"
+    prompt: >-
+      Quelles obligations de confidentialité s'appliquent aux parties en ce qui concerne le contrat et la société ? Indiquez l'étendue, les divulgations admises, la durée et le maintien après la fin du contrat.
+  - index: 21
+    name: "Rapport avec les statuts et le règlement d'organisation"
+    format: "text"
+    prompt: >-
+      Comment le contrat règle-t-il son rapport avec les statuts et le règlement d'organisation (primauté, obligation d'adapter les statuts, obligation de mise en œuvre à l'assemblée générale) ? Régime légal : le contrat ne lie que les parties ; à l'égard de la société, les statuts font foi.
+  - index: 22
+    name: "Droit applicable et règlement des litiges"
+    format: "text"
+    prompt: >-
+      Quel droit et quel mode de règlement des litiges sont convenus (tribunal étatique avec for, tribunal arbitral avec siège, règles et langue, médiation préalable) ? Régime légal : convention d'arbitrage selon les art. 353 ss CPC ou, en cas d'élément d'extranéité, selon les art. 176 ss LDIP ; les statuts peuvent prévoir une clause d'arbitrage pour les litiges de droit des sociétés (art. 697n CO).

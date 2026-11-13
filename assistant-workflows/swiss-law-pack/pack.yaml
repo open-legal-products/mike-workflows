@@ -1,0 +1,16 @@
+$schema: "../../workflow-schema/pack.schema.yaml"
+id: "swiss-law"
+title: "Swiss Law Pack"
+description: "Assistant workflows under Swiss law, each in German and in French: review a non-disclosure agreement from the represented party's perspective against the Code of Obligations, the Civil Code, the Civil Procedure Code, the Data Protection Act and the Private International Law Act, and extract every legal citation from a Swiss brief or opinion (Federal Supreme Court decisions, cantonal decisions, statutes with SR numbers, official publications, doctrine) for verification. Original work by avidia.ai / Legal AI; all outputs are drafts for review by a lawyer."
+publisher:
+  name: "avidia.ai / Legal AI"
+  url: "https://legal.avidia.ai"
+license: "MIT"
+version: "1.0.0"
+jurisdiction: "Switzerland"
+workflows:
+  - "geheimhaltungsvereinbarung-schweiz-review"
+  - "zitate-aus-rechtsschrift-schweiz-extrahieren"
+  - "convention-de-non-divulgation-suisse-revue"
+  - "extraction-des-citations-juridiques-suisse"
+required_connectors: []

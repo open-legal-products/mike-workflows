@@ -1,0 +1,112 @@
+$schema: "../../../workflow-schema/table-columns.schema.yaml"
+columns:
+  - index: 0
+    name: "Vermieterin"
+    format: "text"
+    prompt: >-
+      Wer ist Vermieterin oder Vermieter? Nennen Sie die vollständige Firma oder den Namen, den Sitz und eine Verwaltung, die den Vertrag unterzeichnet.
+  - index: 1
+    name: "Mieterin"
+    format: "text"
+    prompt: >-
+      Wer ist Mieterin oder Mieter? Nennen Sie die vollständige Firma oder den Namen, den Sitz und Solidarschuldner oder Garanten.
+  - index: 2
+    name: "Mietobjekt und Zweck"
+    format: "text"
+    prompt: >-
+      Welche Räume werden vermietet, und zu welchem Zweck? Nennen Sie Adresse, Geschoss, Fläche, Nebenräume, Parkplätze und die vereinbarte Nutzung. Vermerken Sie, ob eine Zweckänderung der Zustimmung der Vermieterin bedarf.
+  - index: 3
+    name: "Mietbeginn"
+    format: "date"
+    prompt: >-
+      Wann beginnt das Mietverhältnis? Weicht die Übergabe oder der Beginn der Mietzinspflicht ab, nennen Sie beide Daten.
+  - index: 4
+    name: "Dauer und Ende"
+    format: "text"
+    prompt: >-
+      Ist das Mietverhältnis befristet oder unbefristet? Nennen Sie das feste Ende und die Regel bei stillschweigender Fortsetzung. Gesetzlicher Normalfall: Ein befristetes Mietverhältnis endet ohne Kündigung; wird es stillschweigend fortgesetzt, gilt es als unbefristet (Art. 255 und 266 OR).
+  - index: 5
+    name: "Verlängerungsoption"
+    format: "yes_no"
+    prompt: >-
+      Hat die Mieterin eine Option auf Verlängerung? Antworten Sie Ja oder Nein und nennen Sie die Klausel.
+  - index: 6
+    name: "Optionsbedingungen"
+    format: "text"
+    prompt: >-
+      Wie wird eine Verlängerungsoption ausgeübt? Nennen Sie Anzahl und Dauer der Optionen, Ausübungsfrist, Form und den Mietzins während der Optionsdauer (fest, indexiert oder neu zu verhandeln). Antworten Sie «Keine Option», wenn keine vereinbart ist.
+  - index: 7
+    name: "Kündigungsfrist und Termine"
+    format: "text"
+    prompt: >-
+      Welche Kündigungsfristen, Kündigungstermine und Formen gelten für beide Seiten? Gesetzlicher Normalfall bei Geschäftsräumen: sechs Monate auf einen ortsüblichen Termin oder auf das Ende einer dreimonatigen Mietdauer (Art. 266d OR); Kündigung schriftlich, durch die Vermieterin mit dem amtlichen Formular (Art. 266l OR).
+  - index: 8
+    name: "Nettomietzins"
+    format: "monetary_amount"
+    prompt: >-
+      Wie hoch ist der Nettomietzins? Nennen Sie Betrag, Währung, Periode (Monat oder Jahr), den Ansatz pro Quadratmeter und ob die Vermieterin für die Mehrwertsteuer optiert hat.
+  - index: 9
+    name: "Nebenkosten"
+    format: "text"
+    prompt: >-
+      Welche Nebenkosten trägt die Mieterin, und wie werden sie abgerechnet (Akonto, Pauschale, Abrechnung, Einsicht)? Gesetzlicher Normalfall: Die Mieterin schuldet Nebenkosten nur, wenn dies besonders vereinbart ist (Art. 257a Abs. 2 OR); Akontozahlungen sind jährlich abzurechnen (Art. 257b OR).
+  - index: 10
+    name: "Indexklausel"
+    format: "yes_no"
+    prompt: >-
+      Ist der Mietzins an den Landesindex der Konsumentenpreise gekoppelt? Antworten Sie Ja oder Nein und nennen Sie die Klausel.
+  - index: 11
+    name: "Staffelmiete"
+    format: "yes_no"
+    prompt: >-
+      Sind im Voraus feste Mietzinserhöhungen vereinbart (Staffelung)? Antworten Sie Ja oder Nein und nennen Sie die Klausel.
+  - index: 12
+    name: "Mietzinsanpassung"
+    format: "text"
+    prompt: >-
+      Wie kann der Mietzins angepasst werden? Nennen Sie Basisindex, Anpassungsintervall, Umfang der Weitergabe, Staffelbeträge und Termine. Gesetzlicher Normalfall: Eine Indexklausel ist nur gültig, wenn der Vertrag für mindestens fünf Jahre fest abgeschlossen ist und an den Landesindex der Konsumentenpreise anknüpft (Art. 269b OR); eine Staffelung setzt eine feste Dauer von mindestens drei Jahren voraus, höchstens eine Erhöhung pro Jahr und einen Betrag in Franken (Art. 269c OR).
+  - index: 13
+    name: "Sicherheit"
+    format: "monetary_amount"
+    prompt: >-
+      Welche Sicherheit leistet die Mieterin? Nennen Sie Betrag, Form (Mietkautionskonto, Bankgarantie, Bürgschaft), Anpassungsregel und Freigabe. Gesetzlicher Normalfall: Eine Barkaution ist auf einem Sparkonto oder Depot auf den Namen der Mieterin zu hinterlegen (Art. 257e Abs. 1 OR); die Grenze von drei Monatsmietzinsen gilt nur für Wohnräume (Art. 257e Abs. 2 OR).
+  - index: 14
+    name: "Untermiete und Übertragung"
+    format: "text"
+    prompt: >-
+      Unter welchen Bedingungen darf die Mieterin untervermieten oder das Mietverhältnis übertragen? Gesetzlicher Normalfall: Untermiete mit Zustimmung der Vermieterin, die sie nur aus den Gründen von Art. 262 Abs. 2 OR verweigern darf; bei Geschäftsräumen kann die Mieterin das Mietverhältnis mit schriftlicher Zustimmung übertragen, die nur aus wichtigem Grund verweigert werden darf, und haftet bis höchstens zwei Jahre solidarisch weiter (Art. 263 OR).
+  - index: 15
+    name: "Unterhalt und Mängel"
+    format: "text"
+    prompt: >-
+      Wer trägt Unterhalt, Reparaturen und Ersatz, und wie sind Mängelrechte geregelt? Nennen Sie Grenzen des kleinen Unterhalts und Haftungsausschlüsse. Gesetzlicher Normalfall: Die Vermieterin übergibt und erhält die Sache in gebrauchstauglichem Zustand; abweichende Vereinbarungen zum Nachteil der Mieterin sind bei Geschäftsräumen nichtig (Art. 256 OR); kleiner Unterhalt durch die Mieterin (Art. 259 OR); Mängelrechte nach Art. 259a ff. OR.
+  - index: 16
+    name: "Mieterausbau und Erneuerungen"
+    format: "text"
+    prompt: >-
+      Welche Regeln gelten für Ausbauten, Erneuerungen und Änderungen durch die Mieterin, deren Finanzierung, Eigentum und Entschädigung bei Mietende? Gesetzlicher Normalfall: nur mit schriftlicher Zustimmung der Vermieterin; weist die Sache bei Mietende dank einer zugestimmten Erneuerung einen erheblichen Mehrwert auf, kann die Mieterin eine Entschädigung verlangen, weitergehende Ansprüche nur bei schriftlicher Vereinbarung (Art. 260a Abs. 1 und 3 OR).
+  - index: 17
+    name: "Rückgabe und Rückbaupflicht"
+    format: "text"
+    prompt: >-
+      In welchem Zustand ist das Mietobjekt zurückzugeben, und besteht eine Pflicht zum Rückbau von Einbauten? Nennen Sie Abnahmeprotokoll, Rügefristen und Kostentragung. Gesetzlicher Normalfall: Rückgabe im Zustand, der sich aus vertragsgemässem Gebrauch ergibt (Art. 267 OR); die Wiederherstellung des früheren Zustands nach Erneuerungen kann die Vermieterin nur verlangen, wenn dies schriftlich vereinbart wurde (Art. 260a Abs. 2 OR); die Vermieterin muss Mängel bei der Rückgabe prüfen und sofort melden (Art. 267a OR).
+  - index: 18
+    name: "Erstreckung"
+    format: "text"
+    prompt: >-
+      Enthält der Vertrag Regeln zur Erstreckung des Mietverhältnisses oder einen Verzicht darauf? Gesetzlicher Normalfall: Bei Geschäftsräumen kann das Mietverhältnis um höchstens sechs Jahre erstreckt werden (Art. 272b OR); ein Verzicht der Mieterin im Voraus ist nichtig (Art. 273c OR). Antworten Sie «Keine Regelung», wenn der Vertrag schweigt.
+  - index: 19
+    name: "Zahlungsverzug"
+    format: "text"
+    prompt: >-
+      Welche Fälligkeit, Mahn- und Verzugsregeln gelten für den Mietzins (Zahlungsfrist, Verzugszins, Kündigung bei Zahlungsrückstand)? Gesetzlicher Normalfall: Zahlung am Ende jedes Monats, spätestens am Ende der Mietzeit (Art. 257c OR); bei Rückstand Nachfrist von mindestens 30 Tagen, danach Kündigung mit einer Frist von mindestens 30 Tagen auf ein Monatsende (Art. 257d OR).
+  - index: 20
+    name: "Konkurrenzschutz und Exklusivität"
+    format: "text"
+    prompt: >-
+      Schützt der Vertrag die Mieterin vor Konkurrenz im Gebäude oder in der Überbauung, oder beschränkt er die Mieterin in ihrer Tätigkeit? Nennen Sie Umfang, Dauer und Ausnahmen. Antworten Sie «Keine Regelung», wenn der Vertrag schweigt.
+  - index: 21
+    name: "Anwendbares Recht, Gerichtsstand und Schlichtung"
+    format: "text"
+    prompt: >-
+      Welches Recht, welcher Gerichtsstand und welche Schlichtungsstelle sind vereinbart? Gesetzlicher Normalfall: Gerichtsstand am Ort der gelegenen Sache (Art. 33 ZPO); Schlichtungsbehörde in Miet- und Pachtsachen vor dem Prozess (Art. 200 ZPO); bei internationalem Bezug Recht des Lageorts (Art. 119 IPRG).

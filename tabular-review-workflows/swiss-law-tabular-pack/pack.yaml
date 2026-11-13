@@ -1,0 +1,19 @@
+$schema: "../../workflow-schema/pack.schema.yaml"
+id: "swiss-law-tabular"
+title: "Swiss Law Tabular Pack"
+description: "Tabular reviews under Swiss law for individual employment contracts (Art. 319 et seq. CO), commercial leases (Art. 253 et seq. CO) and shareholders' agreements, each in German and in French. Every column prompt names the statutory default it is compared with, so deviations are visible in the table. Original work by avidia.ai / Legal AI; all outputs are drafts for review by a lawyer."
+publisher:
+  name: "avidia.ai / Legal AI"
+  url: "https://legal.avidia.ai"
+license: "MIT"
+version: "1.0.0"
+practice: "Contracts"
+jurisdiction: "Switzerland"
+workflows:
+  - "arbeitsvertrag-schweiz-tabellenanalyse"
+  - "geschaeftsmiete-schweiz-tabellenanalyse"
+  - "aktionaerbindungsvertrag-schweiz-tabellenanalyse"
+  - "contrat-de-travail-suisse-analyse-tabulaire"
+  - "bail-commercial-suisse-analyse-tabulaire"
+  - "convention-d-actionnaires-suisse-analyse-tabulaire"
+required_connectors: []
