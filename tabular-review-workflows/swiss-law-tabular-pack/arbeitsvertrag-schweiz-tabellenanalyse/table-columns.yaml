@@ -1,0 +1,97 @@
+$schema: "../../../workflow-schema/table-columns.schema.yaml"
+columns:
+  - index: 0
+    name: "Arbeitgeberin"
+    format: "text"
+    prompt: >-
+      Wer ist Arbeitgeberin oder Arbeitgeber? Nennen Sie die vollständige Firma, den Sitz und, falls angegeben, die UID.
+  - index: 1
+    name: "Arbeitnehmerin"
+    format: "text"
+    prompt: >-
+      Wer ist Arbeitnehmerin oder Arbeitnehmer? Nennen Sie den Namen und, falls angegeben, den Wohnort.
+  - index: 2
+    name: "Vertragsdatum und Stellenantritt"
+    format: "date"
+    prompt: >-
+      Welches Datum trägt der Vertrag? Weicht der Stellenantritt vom Vertragsdatum ab, nennen Sie beide Daten.
+  - index: 3
+    name: "Funktion und Pensum"
+    format: "text"
+    prompt: >-
+      Welche Funktion übernimmt die Arbeitnehmerin oder der Arbeitnehmer? Nennen Sie Funktion, Unterstellung, Arbeitsort und Beschäftigungsgrad (Prozent oder Wochenstunden) mit Klauselverweis.
+  - index: 4
+    name: "Dauer"
+    format: "text"
+    prompt: >-
+      Ist das Arbeitsverhältnis unbefristet oder befristet? Nennen Sie ein Enddatum und eine Verlängerungsregel. Gesetzlicher Normalfall: Ein befristetes Arbeitsverhältnis endet ohne Kündigung; dauert es länger als zehn Jahre, kann es mit einer Frist von sechs Monaten gekündigt werden (Art. 334 OR).
+  - index: 5
+    name: "Probezeit"
+    format: "text"
+    prompt: >-
+      Welche Probezeit sieht der Vertrag vor? Nennen Sie Dauer, Verlängerungsregel und Kündigungsfrist während der Probezeit mit Klauselverweis. Gesetzlicher Normalfall: ein Monat, durch schriftliche Abrede bis höchstens drei Monate, Kündigungsfrist sieben Tage (Art. 335b OR). Vermerken Sie eine Abweichung.
+  - index: 6
+    name: "Kündigungsfristen"
+    format: "text"
+    prompt: >-
+      Welche Kündigungsfristen und Kündigungstermine gelten nach der Probezeit für beide Seiten, und welche Form ist vorgesehen? Gesetzlicher Normalfall: ein Monat im ersten Dienstjahr, zwei Monate im zweiten bis neunten, danach drei Monate, je auf das Ende eines Monats; für beide Parteien gleich lang (Art. 335a und 335c OR). Kürzer als ein Monat nur durch Gesamtarbeitsvertrag und nur für das erste Dienstjahr (Art. 335c Abs. 2 OR). Vermerken Sie ungleiche oder kürzere Fristen.
+  - index: 7
+    name: "Lohn"
+    format: "monetary_amount"
+    prompt: >-
+      Wie hoch ist der Bruttolohn? Nennen Sie Betrag, Währung, Periode (Monat oder Jahr), die Anzahl Monatslöhne und Zulagen mit Klauselverweis (Art. 322 OR).
+  - index: 8
+    name: "Bonus und Gratifikation"
+    format: "text"
+    prompt: >-
+      Welche variable Vergütung, welcher Bonus oder welche Gratifikation ist vorgesehen? Nennen Sie, ob ein Anspruch besteht oder die Zahlung im Ermessen liegt, die Kriterien, die Höhe, die Fälligkeit und die Regel bei Austritt während des Jahres (Art. 322d OR). Antworten Sie «Keine», wenn nichts vereinbart ist.
+  - index: 9
+    name: "Arbeitszeit und Überstunden"
+    format: "text"
+    prompt: >-
+      Welche wöchentliche Arbeitszeit gilt, und wie werden Überstunden behandelt (Kompensation, Zuschlag von 25 Prozent, schriftliche Wegbedingung, Pauschalabgeltung)? Gesetzlicher Normalfall: Überstunden sind mit Freizeit auszugleichen oder mit 25 Prozent Zuschlag zu bezahlen, sofern nichts anderes schriftlich vereinbart ist (Art. 321c OR). Überzeit über der wöchentlichen Höchstarbeitszeit von 45 oder 50 Stunden bleibt nach Art. 9, 12 und 13 ArG geschuldet.
+  - index: 10
+    name: "Lohnfortzahlung bei Krankheit und Unfall"
+    format: "text"
+    prompt: >-
+      Wie lange und in welcher Höhe wird der Lohn bei Krankheit und Unfall fortgezahlt? Nennen Sie eine Krankentaggeldversicherung mit Taggeld, Wartefrist, Leistungsdauer und Prämienteilung. Gesetzlicher Normalfall: drei Wochen im ersten Dienstjahr, danach eine angemessen längere Zeit (Art. 324a Abs. 1 und 2 OR); eine Versicherungslösung muss gleichwertig und schriftlich vereinbart sein (Art. 324a Abs. 4 OR).
+  - index: 11
+    name: "Ferien"
+    format: "text"
+    prompt: >-
+      Wie viele Ferienwochen oder Ferientage pro Jahr sind vereinbart, und welche Regeln gelten für Bezug, Übertrag und Abgeltung? Gesetzlicher Normalfall: vier Wochen, fünf Wochen bis zum vollendeten 20. Altersjahr (Art. 329a OR); eine Abgeltung in Geld während des Arbeitsverhältnisses ist unzulässig (Art. 329d Abs. 2 OR).
+  - index: 12
+    name: "Konkurrenzverbot vorhanden"
+    format: "yes_no"
+    prompt: >-
+      Enthält der Vertrag ein nachvertragliches Konkurrenzverbot? Antworten Sie Ja oder Nein und nennen Sie die Klausel.
+  - index: 13
+    name: "Konkurrenzverbot Umfang"
+    format: "text"
+    prompt: >-
+      Wie ist ein nachvertragliches Konkurrenzverbot nach Ort, Zeit und Gegenstand begrenzt, und welche Folgen hat eine Verletzung (Konventionalstrafe, Schadenersatz, Realexekution, Karenzentschädigung)? Gesetzlicher Normalfall: schriftliche Form und Einblick in den Kundenkreis oder in Geschäftsgeheimnisse (Art. 340 OR), Begrenzung nach Ort, Zeit und Gegenstand mit höchstens drei Jahren (Art. 340a OR), Folgen nach Art. 340b OR, Wegfall nach Art. 340c OR. Antworten Sie «Nicht vorhanden», wenn kein Verbot vereinbart ist.
+  - index: 14
+    name: "Geheimhaltung und Nebenbeschäftigung"
+    format: "text"
+    prompt: >-
+      Welche Geheimhaltungspflichten gelten während und nach dem Arbeitsverhältnis, und welche Regeln gelten für Nebenbeschäftigungen und deren Bewilligung? Gesetzlicher Normalfall: Treuepflicht und Geheimhaltung nach Art. 321a Abs. 3 und 4 OR.
+  - index: 15
+    name: "Immaterialgüterrechte"
+    format: "text"
+    prompt: >-
+      Wem gehören Erfindungen, Designs, Software und andere Arbeitsergebnisse? Nennen Sie Vorbehalte für Gelegenheitserfindungen und eine Vergütung. Gesetzlicher Normalfall: Diensterfindungen gehören der Arbeitgeberin, Gelegenheitserfindungen nur bei schriftlicher Abrede und gegen angemessene Vergütung (Art. 332 OR); die Verwendungsbefugnisse an Software stehen der Arbeitgeberin nach Art. 17 URG zu, Rechte an anderen Werken nur durch Abtretung.
+  - index: 16
+    name: "Datenschutz und Überwachung"
+    format: "text"
+    prompt: >-
+      Welche Regeln gelten für die Bearbeitung von Personendaten, die Nutzung von IT-Mitteln und die Überwachung? Gesetzlicher Normalfall: Daten nur, soweit sie das Arbeitsverhältnis betreffen (Art. 328b OR); keine Systeme zur Verhaltensüberwachung (Art. 26 ArGV 3).
+  - index: 17
+    name: "GAV, NAV und Reglemente"
+    format: "text"
+    prompt: >-
+      Welche Gesamtarbeitsverträge, Normalarbeitsverträge, Reglemente, Weisungen oder Anhänge gelten laut Vertrag, in welcher Rangordnung, und kann die Arbeitgeberin sie einseitig ändern? Nennen Sie die Fundstellen (Art. 357 OR).
+  - index: 18
+    name: "Anwendbares Recht und Gerichtsstand"
+    format: "text"
+    prompt: >-
+      Welches Recht und welcher Gerichtsstand sind vereinbart? Gesetzlicher Normalfall: Gerichtsstand am Wohnsitz oder Sitz der beklagten Partei oder am gewöhnlichen Arbeitsort (Art. 34 ZPO); die Arbeitnehmerin kann im Voraus nicht darauf verzichten (Art. 35 ZPO); eine Rechtswahl ist bei internationalem Bezug beschränkt (Art. 121 IPRG).

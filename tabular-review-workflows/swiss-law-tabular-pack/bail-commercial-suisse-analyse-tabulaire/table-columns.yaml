@@ -1,0 +1,112 @@
+$schema: "../../../workflow-schema/table-columns.schema.yaml"
+columns:
+  - index: 0
+    name: "Bailleur"
+    format: "text"
+    prompt: >-
+      Qui est le bailleur ? Indiquez la raison sociale complète ou le nom, le siège et une gérance qui signe le contrat.
+  - index: 1
+    name: "Locataire"
+    format: "text"
+    prompt: >-
+      Qui est le locataire ? Indiquez la raison sociale complète ou le nom, le siège et les codébiteurs solidaires ou garants.
+  - index: 2
+    name: "Objet du bail et affectation"
+    format: "text"
+    prompt: >-
+      Quels locaux sont loués, et à quelle fin ? Indiquez l'adresse, l'étage, la surface, les locaux annexes, les places de stationnement et l'utilisation convenue. Signalez si un changement d'affectation requiert l'accord du bailleur.
+  - index: 3
+    name: "Début du bail"
+    format: "date"
+    prompt: >-
+      Quand le bail commence-t-il ? Si la remise des locaux ou le début de l'obligation de payer le loyer diffère, indiquez les deux dates.
+  - index: 4
+    name: "Durée et fin"
+    format: "text"
+    prompt: >-
+      Le bail est-il de durée déterminée ou indéterminée ? Indiquez la fin fixée et la règle en cas de reconduction tacite. Régime légal : un bail de durée déterminée prend fin sans congé ; s'il est reconduit tacitement, il est réputé de durée indéterminée (art. 255 et 266 CO).
+  - index: 5
+    name: "Option de prolongation"
+    format: "yes_no"
+    prompt: >-
+      Le locataire dispose-t-il d'une option de prolongation ? Répondez Oui ou Non et indiquez la clause.
+  - index: 6
+    name: "Conditions de l'option"
+    format: "text"
+    prompt: >-
+      Comment une option de prolongation s'exerce-t-elle ? Indiquez le nombre et la durée des options, le délai d'exercice, la forme et le loyer pendant la durée de l'option (fixe, indexé ou à renégocier). Répondez «Aucune option» si aucune n'est convenue.
+  - index: 7
+    name: "Délai de congé et termes"
+    format: "text"
+    prompt: >-
+      Quels délais de congé, termes de congé et formes s'appliquent aux deux parties ? Régime légal pour les locaux commerciaux : six mois pour un terme usuel dans la localité ou, à défaut, pour la fin d'une période de bail de trois mois (art. 266d CO) ; congé donné par écrit, par le bailleur au moyen de la formule officielle (art. 266l CO).
+  - index: 8
+    name: "Loyer net"
+    format: "monetary_amount"
+    prompt: >-
+      Quel est le loyer net ? Indiquez le montant, la monnaie, la période (mois ou année), le prix au mètre carré et si le bailleur a opté pour l'assujettissement à la TVA.
+  - index: 9
+    name: "Frais accessoires"
+    format: "text"
+    prompt: >-
+      Quels frais accessoires le locataire supporte-t-il, et comment sont-ils décomptés (acomptes, forfait, décompte, consultation des pièces) ? Régime légal : le locataire ne doit les frais accessoires que si cela a été convenu spécialement (art. 257a al. 2 CO) ; les acomptes font l'objet d'un décompte annuel (art. 257b CO).
+  - index: 10
+    name: "Clause d'indexation"
+    format: "yes_no"
+    prompt: >-
+      Le loyer est-il lié à l'indice suisse des prix à la consommation ? Répondez Oui ou Non et indiquez la clause.
+  - index: 11
+    name: "Loyer échelonné"
+    format: "yes_no"
+    prompt: >-
+      Des augmentations de loyer fixes sont-elles convenues à l'avance (échelonnement) ? Répondez Oui ou Non et indiquez la clause.
+  - index: 12
+    name: "Adaptation du loyer"
+    format: "text"
+    prompt: >-
+      Comment le loyer peut-il être adapté ? Indiquez l'indice de base, l'intervalle d'adaptation, l'ampleur de la répercussion, les montants des paliers et leurs termes. Régime légal : une clause d'indexation n'est valable que si le bail est conclu pour une durée déterminée d'au moins cinq ans et se réfère à l'indice suisse des prix à la consommation (art. 269b CO) ; un échelonnement suppose une durée déterminée d'au moins trois ans, une seule augmentation par année au plus et un montant en francs (art. 269c CO).
+  - index: 13
+    name: "Sûretés"
+    format: "monetary_amount"
+    prompt: >-
+      Quelles sûretés le locataire fournit-il ? Indiquez le montant, la forme (compte de garantie de loyer, garantie bancaire, cautionnement), la règle d'adaptation et la libération. Régime légal : une garantie en espèces doit être déposée sur un compte d'épargne ou de dépôt au nom du locataire (art. 257e al. 1 CO) ; la limite de trois mois de loyer ne vaut que pour les locaux d'habitation (art. 257e al. 2 CO).
+  - index: 14
+    name: "Sous-location et transfert du bail"
+    format: "text"
+    prompt: >-
+      À quelles conditions le locataire peut-il sous-louer ou transférer le bail ? Régime légal : sous-location avec le consentement du bailleur, qui ne peut le refuser que pour les motifs de l'art. 262 al. 2 CO ; pour les locaux commerciaux, le locataire peut transférer le bail avec le consentement écrit du bailleur, qui ne peut le refuser que pour de justes motifs, et reste solidairement responsable pendant deux ans au plus (art. 263 CO).
+  - index: 15
+    name: "Entretien et défauts"
+    format: "text"
+    prompt: >-
+      Qui supporte l'entretien, les réparations et le remplacement, et comment les droits en cas de défauts sont-ils réglés ? Indiquez les limites des menus travaux de nettoyage et de réparation et les exclusions de responsabilité. Régime légal : le bailleur délivre et maintient la chose dans un état approprié à l'usage convenu ; les accords dérogatoires au détriment du locataire sont nuls pour les locaux commerciaux (art. 256 CO) ; menus travaux de nettoyage et de réparation à la charge du locataire (art. 259 CO) ; droits en cas de défauts selon les art. 259a ss CO.
+  - index: 16
+    name: "Aménagements du locataire et rénovations"
+    format: "text"
+    prompt: >-
+      Quelles règles s'appliquent aux aménagements, rénovations et modifications par le locataire, à leur financement, à leur propriété et à l'indemnisation à la fin du bail ? Régime légal : seulement avec le consentement écrit du bailleur ; si, à la fin du bail, la chose présente une plus-value considérable grâce à une rénovation consentie, le locataire peut demander une indemnité, des prétentions plus étendues seulement en cas de convention écrite (art. 260a al. 1 et 3 CO).
+  - index: 17
+    name: "Restitution et obligation de démontage"
+    format: "text"
+    prompt: >-
+      Dans quel état l'objet du bail doit-il être restitué, et existe-t-il une obligation de démonter les installations ? Indiquez le procès-verbal de restitution, les délais d'avis des défauts et la prise en charge des coûts. Régime légal : restitution dans l'état résultant d'un usage conforme au contrat (art. 267 CO) ; le bailleur ne peut exiger la remise dans l'état antérieur après des rénovations que si cela a été convenu par écrit (art. 260a al. 2 CO) ; le bailleur doit vérifier l'état de la chose à la restitution et signaler immédiatement les défauts (art. 267a CO).
+  - index: 18
+    name: "Prolongation du bail"
+    format: "text"
+    prompt: >-
+      Le contrat contient-il des règles sur la prolongation du bail ou une renonciation à celle-ci ? Régime légal : pour les locaux commerciaux, le bail peut être prolongé de six ans au plus (art. 272b CO) ; la renonciation anticipée du locataire est nulle (art. 273c CO). Répondez «Aucune disposition» si le contrat est muet.
+  - index: 19
+    name: "Demeure dans le paiement"
+    format: "text"
+    prompt: >-
+      Quelles règles d'exigibilité, de rappel et de demeure s'appliquent au loyer (délai de paiement, intérêt moratoire, résiliation en cas d'arriéré) ? Régime légal : paiement à la fin de chaque mois, au plus tard à la fin du bail (art. 257c CO) ; en cas d'arriéré, délai de paiement d'au moins 30 jours, puis congé avec un délai d'au moins 30 jours pour la fin d'un mois (art. 257d CO).
+  - index: 20
+    name: "Protection contre la concurrence et exclusivité"
+    format: "text"
+    prompt: >-
+      Le contrat protège-t-il le locataire de la concurrence dans l'immeuble ou l'ensemble construit, ou limite-t-il l'activité du locataire ? Indiquez la portée, la durée et les exceptions. Répondez «Aucune disposition» si le contrat est muet.
+  - index: 21
+    name: "Droit applicable, for et conciliation"
+    format: "text"
+    prompt: >-
+      Quel droit, quel for et quelle autorité de conciliation sont convenus ? Régime légal : for au lieu de situation de la chose (art. 33 CPC) ; autorité de conciliation en matière de bail à loyer et à ferme avant le procès (art. 200 CPC) ; en cas d'élément d'extranéité, droit du lieu de situation (art. 119 LDIP).

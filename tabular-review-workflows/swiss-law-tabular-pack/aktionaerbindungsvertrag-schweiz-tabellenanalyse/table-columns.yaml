@@ -1,0 +1,117 @@
+$schema: "../../../workflow-schema/table-columns.schema.yaml"
+columns:
+  - index: 0
+    name: "Parteien"
+    format: "bulleted_list"
+    prompt: >-
+      Wer sind die Parteien des Aktionärbindungsvertrags? Nennen Sie je Partei den vollständigen Namen oder die Firma, den Sitz oder Wohnort und die Rolle (Gründerin, Investorin, Minderheitsaktionärin, Mitarbeiterin, Gesellschaft als Partei).
+  - index: 1
+    name: "Gesellschaft"
+    format: "text"
+    prompt: >-
+      Auf welche Gesellschaft bezieht sich der Vertrag? Nennen Sie Firma, Sitz, Aktienkapital und die Aktienkategorien mit Nennwert und Stimmrecht, soweit der Vertrag sie nennt.
+  - index: 2
+    name: "Vertragsdatum"
+    format: "date"
+    prompt: >-
+      Welches Datum trägt der Vertrag? Nennen Sie auch ein abweichendes Inkrafttreten oder eine aufschiebende Bedingung.
+  - index: 3
+    name: "Beteiligungen"
+    format: "bulleted_list"
+    prompt: >-
+      Wie sind die Aktien verteilt? Nennen Sie je Aktionärin die Anzahl Aktien, die Kategorie, den Nennwert und den Anteil am Kapital und an den Stimmen, falls angegeben auch auf voll verwässerter Basis.
+  - index: 4
+    name: "Dauer und Beendigung"
+    format: "text"
+    prompt: >-
+      Wie lange gilt der Vertrag, und wie endet er (feste Dauer, Verlängerung, Kündigung, Austritt bei Verkauf aller Aktien, Beendigungsgründe)? Gesetzlicher Normalfall: Ein Aktionärbindungsvertrag ist in der Regel eine einfache Gesellschaft (Art. 530 OR); bei unbestimmter Dauer kann jede Partei mit einer Frist von sechs Monaten kündigen (Art. 546 OR); eine übermässige Bindung ist unzulässig (Art. 27 Abs. 2 ZGB).
+  - index: 5
+    name: "Stimmbindung"
+    format: "text"
+    prompt: >-
+      Zu welchen Gegenständen verpflichten sich die Parteien, in der Generalversammlung einheitlich abzustimmen, und wie wird die gemeinsame Haltung gebildet (Vorversammlung, Mehrheit, Stimmrechtsvertretung)? Vermerken Sie, ob Weisungen an Mitglieder des Verwaltungsrats vorgesehen sind. Gesetzlicher Normalfall: Eine Stimmbindung wirkt nur unter den Parteien und bindet die Gesellschaft nicht; Mitglieder des Verwaltungsrats bleiben an ihre Sorgfalts- und Treuepflicht gebunden (Art. 717 OR).
+  - index: 6
+    name: "Verwaltungsrat"
+    format: "text"
+    prompt: >-
+      Wie wird der Verwaltungsrat zusammengesetzt? Nennen Sie Grösse, Nominationsrechte je Partei oder Gruppe mit Beteiligungsschwelle, Präsidium, Stichentscheid und Pflicht zur Wahl der Nominierten. Gesetzlicher Normalfall: Wahl durch die Generalversammlung (Art. 698 Abs. 2 Ziff. 2 OR); die Statuten können Aktionärskategorien oder Gruppen eine Vertretung sichern (Art. 709 OR).
+  - index: 7
+    name: "Wichtige Beschlüsse und Vetorechte"
+    format: "bulleted_list"
+    prompt: >-
+      Welche Beschlüsse der Generalversammlung oder des Verwaltungsrats brauchen eine qualifizierte Mehrheit, Einstimmigkeit oder die Zustimmung einer bestimmten Partei? Nennen Sie je Gegenstand das Quorum oder die zustimmende Partei. Gesetzlicher Normalfall: wichtige Beschlüsse mit zwei Dritteln der vertretenen Stimmen und der Mehrheit der vertretenen Aktiennennwerte (Art. 704 OR).
+  - index: 8
+    name: "Vinkulierung und Übertragungsbeschränkungen"
+    format: "text"
+    prompt: >-
+      Welche Beschränkungen gelten für die Übertragung von Aktien (Sperrfristen, Zustimmungsvorbehalte, zulässige Übertragungen an Nahestehende, Verpfändungsverbot)? Vermerken Sie, ob der Vertrag eine statutarische Vinkulierung verlangt. Gesetzlicher Normalfall: Namenaktien sind frei übertragbar, sofern die Statuten nichts anderes bestimmen (Art. 684 und 685a ff. OR).
+  - index: 9
+    name: "Vorhand- und Vorkaufsrechte"
+    format: "text"
+    prompt: >-
+      Bestehen Vorhandrechte, Vorkaufsrechte oder Kaufrechte bei einer geplanten Übertragung? Nennen Sie Berechtigte, Auslösung, Fristen, Verfahren und die Preisbestimmung oder Bewertungsmethode.
+  - index: 10
+    name: "Kauf- und Verkaufsrechte bei Austritt"
+    format: "text"
+    prompt: >-
+      Welche Kaufrechte (Call) oder Verkaufsrechte (Put) bestehen bei Ereignissen wie Kündigung des Arbeitsverhältnisses, Tod, Konkurs, Kontrollwechsel oder Vertragsverletzung (Good Leaver, Bad Leaver)? Nennen Sie Auslöser, Berechtigte, Fristen und Preisformel.
+  - index: 11
+    name: "Mitverkaufspflicht Drag-along"
+    format: "text"
+    prompt: >-
+      Besteht eine Mitverkaufspflicht? Nennen Sie, wer sie auslösen kann, die erforderliche Beteiligungsschwelle, Mindestpreis oder Bewertung, die Pflichten der mitverkaufenden Parteien und Schutzregeln für Minderheiten. Antworten Sie «Keine», wenn nichts vereinbart ist.
+  - index: 12
+    name: "Mitverkaufsrecht Tag-along"
+    format: "text"
+    prompt: >-
+      Besteht ein Mitverkaufsrecht? Nennen Sie die Berechtigten, den auslösenden Verkauf, das Verfahren mit Fristen, Preis und Bedingungen des Mitverkaufs und Ausnahmen. Antworten Sie «Keine», wenn nichts vereinbart ist.
+  - index: 13
+    name: "Bezugsrechte und Verwässerungsschutz"
+    format: "text"
+    prompt: >-
+      Welche Bezugsrechte und Verwässerungsschutzregeln gelten bei Kapitalerhöhungen (Umfang, Verfahren, Ausnahmen wie Mitarbeiterbeteiligungen, Anpassungsformel)? Gesetzlicher Normalfall: Jede Aktionärin hat ein Bezugsrecht im Verhältnis ihrer Beteiligung; die Generalversammlung kann es nur aus wichtigen Gründen beschränken oder aufheben (Art. 652b OR).
+  - index: 14
+    name: "Dividendenpolitik"
+    format: "text"
+    prompt: >-
+      Welche Regeln gelten für Dividenden (Ausschüttungsquote, Vorzugsdividenden, Thesaurierung, Zustimmungserfordernisse)? Gesetzlicher Normalfall: Die Generalversammlung beschliesst über die Verwendung des Bilanzgewinns (Art. 698 Abs. 2 Ziff. 4 OR) unter Vorbehalt der gesetzlichen Reserven (Art. 671 ff. OR).
+  - index: 15
+    name: "Finanzierung und Nachschusspflichten"
+    format: "text"
+    prompt: >-
+      Verpflichten sich die Parteien zu weiteren Finanzierungen, Darlehen, Garantien oder Nachschüssen? Nennen Sie Umfang, Auslöser und Folgen bei Nichterfüllung. Gesetzlicher Normalfall: Die Aktionärin ist nur zur Liberierung ihrer Aktien verpflichtet; weitere Pflichten bestehen nur vertraglich (Art. 680 Abs. 1 OR).
+  - index: 16
+    name: "Konkurrenzverbot und Abwerbeverbot"
+    format: "text"
+    prompt: >-
+      Unterliegen Parteien einem Konkurrenzverbot oder einem Abwerbeverbot? Nennen Sie die Gebundenen, Gegenstand, Gebiet, Dauer während und nach der Beteiligung sowie Ausnahmen. Gesetzlicher Normalfall: Die Bindung darf nicht übermässig sein (Art. 27 Abs. 2 ZGB).
+  - index: 17
+    name: "Pattsituation"
+    format: "text"
+    prompt: >-
+      Wie wird eine Pattsituation gelöst (Eskalation, Mediation, Stichentscheid, Kauf- oder Verkaufsverfahren wie Russian Roulette oder Texas Shoot-out, Auflösung)? Nennen Sie Auslöser, Verfahren und Folgen, wenn die Lösung scheitert. Antworten Sie «Keine Regelung», wenn der Vertrag schweigt.
+  - index: 18
+    name: "Exit"
+    format: "text"
+    prompt: >-
+      Welche Exit-Regeln bestehen (Verkauf der Gesellschaft, Börsengang, Fristen oder Meilensteine, Recht einer Partei, einen Verkaufsprozess auszulösen, Liquidationspräferenzen, Verteilung des Erlöses)?
+  - index: 19
+    name: "Konventionalstrafe"
+    format: "monetary_amount"
+    prompt: >-
+      Welche Konventionalstrafe ist für Vertragsverletzungen vereinbart? Nennen Sie Betrag oder Formel, auslösende Verletzungen und das Verhältnis zum Schadenersatz. Gesetzlicher Normalfall: Die Strafe ist ohne Schadensnachweis geschuldet; Schadenersatz über die Strafe hinaus nur bei Verschulden; das Gericht kann eine übermässig hohe Strafe herabsetzen (Art. 160, 161 und 163 OR).
+  - index: 20
+    name: "Vertraulichkeit"
+    format: "text"
+    prompt: >-
+      Welche Vertraulichkeitspflichten gelten für die Parteien in Bezug auf den Vertrag und die Gesellschaft? Nennen Sie Umfang, zulässige Offenlegungen, Dauer und Fortbestand nach Vertragsende.
+  - index: 21
+    name: "Verhältnis zu Statuten und Organisationsreglement"
+    format: "text"
+    prompt: >-
+      Wie regelt der Vertrag sein Verhältnis zu Statuten und Organisationsreglement (Vorrang, Pflicht zur Anpassung der Statuten, Pflicht zur Umsetzung in der Generalversammlung)? Gesetzlicher Normalfall: Der Vertrag bindet nur die Parteien; gegenüber der Gesellschaft gelten die Statuten.
+  - index: 22
+    name: "Anwendbares Recht und Streitbeilegung"
+    format: "text"
+    prompt: >-
+      Welches Recht und welche Streitbeilegung sind vereinbart (staatliches Gericht mit Gerichtsstand, Schiedsgericht mit Sitz, Regeln und Sprache, vorgeschaltete Mediation)? Gesetzlicher Normalfall: Schiedsvereinbarung nach Art. 353 ff. ZPO oder bei internationalem Bezug nach Art. 176 ff. IPRG; die Statuten können eine Schiedsklausel für gesellschaftsrechtliche Streitigkeiten vorsehen (Art. 697n OR).
